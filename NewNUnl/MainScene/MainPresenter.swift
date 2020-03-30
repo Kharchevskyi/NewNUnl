@@ -22,7 +22,7 @@ protocol MainPresenterOutput {
 
 struct MainPresenter {
     enum Update {
-        case loadedSettings([MainModel])
+        case loadedSettings([BFFElement])
     }
 
     enum Scene {
@@ -43,7 +43,7 @@ extension MainPresenter: MainPresenterInput {
         DispatchQueue.main.async {
             switch updateType {
             case .loadedSettings(let settings):
-                let viewModels = settings.map(MainViewModel.init)
+                let viewModels = settings.map(ViewModel.init)
                 self.output.update(with: .finishedLoading(viewModels))
             }
         }
@@ -57,14 +57,14 @@ extension MainPresenter: MainPresenterInput {
     }
 }
 
-extension MainViewModel {
-    init(model: MainModel) {
-        self.settingType = model.mainType
+extension ViewModel {
+    init(model: BFFElement) {
+        self.elementType = model.mainType
 
         var input = SettingNode.Input(
             image: .actions,
-            title: model.mainType.title.attributed(with: 17, color: .red),
-            subTitle: model.mainType.subtitle.attributed(with: 15, color: .blue)
+            title: model.mainType.title.attributed(with: 35, color: .red),
+            subTitle: model.mainType.subtitle.attributed(with: 35, color: .blue)
         )
 
         self.node = input.node
@@ -73,7 +73,7 @@ extension MainViewModel {
     }
 }
 
-extension MainSettingType {
+extension BFFElementType {
     var title: String {
         rawValue
     }

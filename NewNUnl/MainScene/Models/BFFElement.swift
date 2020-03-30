@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct MainModel {
-    let mainType: MainSettingType
+struct BFFElement {
+    let mainType: BFFElementType
 }

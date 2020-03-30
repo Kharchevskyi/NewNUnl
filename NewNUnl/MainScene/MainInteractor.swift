@@ -34,7 +34,7 @@ struct MainInteractor: MainInteractorInput {
         // perform some setup of buisnes logic
         // fetch something or subscribe for notification
         DispatchQueue.global().asyncAfter(deadline: .now() + 2) {
-            let allMenuItems = MainSettingType.allCases.map(MainModel.init)
+            let allMenuItems = BFFElementType.allCases.map(BFFElement.init)
             self.output.update(with: .loadedSettings(allMenuItems))
         }
     }
@@ -48,6 +48,3 @@ struct MainInteractor: MainInteractorInput {
         }
     }
 }
-
-
-

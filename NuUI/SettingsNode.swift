@@ -54,8 +54,13 @@ public final class SettingNode: ASCellNode {
         imageNode.image = input.image
     }
 
-    @objc private func onTapAction() {
-        input.action?()
+    @objc private func onTapAction(_ sender: ASDisplayNode) {
+        switch sender {
+        case imageNode: input.action?()
+        case titleNode: input.action?()
+        case subtitleNode: input.action?()
+        default: input.action?()
+        }
     }
 
     public override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
@@ -77,25 +82,29 @@ public final class SettingNode: ASCellNode {
             children: [imageNode, textSpec]
         )
 
-        return finalSepc
+        return ASInsetLayoutSpec(
+            insets: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10), child: finalSepc)
     }
 
 //    public override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
-//        ASStackLayoutSpec(
-//            direction: .horizontal,
-//            spacing: 20,
-//            justifyContent: .start,
-//            alignItems: .center,
-//            children: [
-//                imageNode,
-//                ASStackLayoutSpec(
-//                    direction: .vertical,
-//                    spacing: 8,
-//                    justifyContent: .start,
-//                    alignItems: .center,
-//                    children: [titleNode, subtitleNode]
-//                )
-//            ]
+//        ASInsetLayoutSpec(
+//            insets: UIEdgeInsets(top: 10, left: 20, bottom: 20, right: 20),
+//            child: ASStackLayoutSpec(
+//                direction: .horizontal,
+//                spacing: 20,
+//                justifyContent: .start,
+//                alignItems: .center,
+//                children: [
+//                    imageNode,
+//                    ASStackLayoutSpec(
+//                        direction: .vertical,
+//                        spacing: 8,
+//                        justifyContent: .start,
+//                        alignItems: .center,
+//                        children: [titleNode, subtitleNode]
+//                    )
+//                ]
+//            )
 //        )
 //    }
 }

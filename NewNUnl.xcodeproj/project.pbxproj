@@ -7,20 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		047E0DE635FD544FBA4F6ADC /* Pods_NewNUnlTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C496E0BF1F757885288636 /* Pods_NewNUnlTests.framework */; };
 		30F22982FABE373E2FD16378 /* Pods_NewNUnl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9AEC10F6E73F321EA486E5A /* Pods_NewNUnl.framework */; };
-		3236ED6F4E5F5359116C3FC1 /* Pods_NewNUnl_NewNUnlUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69ABA4C3925C3976CD800CB0 /* Pods_NewNUnl_NewNUnlUITests.framework */; };
 		6BD76585676B503ABA45C0C5 /* Pods_NewNUnl_NuUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2AD9754A796B449E498D467 /* Pods_NewNUnl_NuUI.framework */; };
 		D278EA20242BB5AF00C3978D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278EA1F242BB5AF00C3978D /* AppDelegate.swift */; };
 		D278EA22242BB5AF00C3978D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278EA21242BB5AF00C3978D /* SceneDelegate.swift */; };
 		D278EA29242BB5AF00C3978D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D278EA28242BB5AF00C3978D /* Assets.xcassets */; };
 		D278EA2C242BB5AF00C3978D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D278EA2A242BB5AF00C3978D /* LaunchScreen.storyboard */; };
-		D278EA37242BB5B000C3978D /* NewNUnlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278EA36242BB5B000C3978D /* NewNUnlTests.swift */; };
-		D278EA42242BB5B000C3978D /* NewNUnlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278EA41242BB5B000C3978D /* NewNUnlUITests.swift */; };
-		D2E0B1EC242BBAA600E8F280 /* NUnlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B1EB242BBAA600E8F280 /* NUnlUITests.swift */; };
-		D2E0B20F242BBDDD00E8F280 /* NewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B20E242BBDDD00E8F280 /* NewUITests.swift */; };
-		D2E0B22A242BBED400E8F280 /* NuUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E0B221242BBED400E8F280 /* NuUI.framework */; };
-		D2E0B231242BBED400E8F280 /* NuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B230242BBED400E8F280 /* NuUITests.swift */; };
 		D2E0B233242BBED400E8F280 /* NuUI.h in Headers */ = {isa = PBXBuildFile; fileRef = D2E0B223242BBED400E8F280 /* NuUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2E0B236242BBED400E8F280 /* NuUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E0B221242BBED400E8F280 /* NuUI.framework */; };
 		D2E0B237242BBED400E8F280 /* NuUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D2E0B221242BBED400E8F280 /* NuUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -31,54 +23,12 @@
 		D2E0B248242BC1EF00E8F280 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B247242BC1EF00E8F280 /* MainRouter.swift */; };
 		D2E0B24A242BC1FA00E8F280 /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B249242BC1FA00E8F280 /* MainConfigurator.swift */; };
 		D2E0B24C242BC82200E8F280 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B24B242BC82200E8F280 /* Tracker.swift */; };
-		D2E0B24F242BC98900E8F280 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B24E242BC98900E8F280 /* MainViewModel.swift */; };
-		D2E0B252242BEE3800E8F280 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B251242BEE3800E8F280 /* MainModel.swift */; };
+		D2E0B24F242BC98900E8F280 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B24E242BC98900E8F280 /* ViewModel.swift */; };
+		D2E0B252242BEE3800E8F280 /* BFFElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B251242BEE3800E8F280 /* BFFElement.swift */; };
 		D2E0B258242BF64100E8F280 /* NUCommon in Frameworks */ = {isa = PBXBuildFile; productRef = D2E0B257242BF64100E8F280 /* NUCommon */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D278EA33242BB5B000C3978D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D278EA14242BB5AF00C3978D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D278EA1B242BB5AF00C3978D;
-			remoteInfo = NewNUnl;
-		};
-		D278EA3E242BB5B000C3978D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D278EA14242BB5AF00C3978D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D278EA1B242BB5AF00C3978D;
-			remoteInfo = NewNUnl;
-		};
-		D2E0B1E8242BBAA600E8F280 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D278EA14242BB5AF00C3978D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D278EA1B242BB5AF00C3978D;
-			remoteInfo = NewNUnl;
-		};
-		D2E0B20B242BBDDD00E8F280 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D278EA14242BB5AF00C3978D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D278EA1B242BB5AF00C3978D;
-			remoteInfo = NewNUnl;
-		};
-		D2E0B22B242BBED400E8F280 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D278EA14242BB5AF00C3978D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D2E0B220242BBED400E8F280;
-			remoteInfo = NuUI;
-		};
-		D2E0B22D242BBED400E8F280 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D278EA14242BB5AF00C3978D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D278EA1B242BB5AF00C3978D;
-			remoteInfo = NewNUnl;
-		};
 		D2E0B234242BBED400E8F280 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D278EA14242BB5AF00C3978D /* Project object */;
@@ -121,23 +71,10 @@
 		D278EA28242BB5AF00C3978D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D278EA2B242BB5AF00C3978D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D278EA2D242BB5AF00C3978D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D278EA32242BB5B000C3978D /* NewNUnlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewNUnlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D278EA36242BB5B000C3978D /* NewNUnlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNUnlTests.swift; sourceTree = "<group>"; };
-		D278EA38242BB5B000C3978D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D278EA3D242BB5B000C3978D /* NewNUnlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewNUnlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D278EA41242BB5B000C3978D /* NewNUnlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNUnlUITests.swift; sourceTree = "<group>"; };
-		D278EA43242BB5B000C3978D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2C496E0BF1F757885288636 /* Pods_NewNUnlTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewNUnlTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2E0B1E4242BBAA600E8F280 /* NUnlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NUnlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2E0B1EB242BBAA600E8F280 /* NUnlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NUnlUITests.swift; sourceTree = "<group>"; };
-		D2E0B1ED242BBAA600E8F280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2E0B207242BBDDD00E8F280 /* NewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2E0B20E242BBDDD00E8F280 /* NewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUITests.swift; sourceTree = "<group>"; };
-		D2E0B210242BBDDD00E8F280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2E0B221242BBED400E8F280 /* NuUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NuUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E0B223242BBED400E8F280 /* NuUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NuUI.h; sourceTree = "<group>"; };
 		D2E0B224242BBED400E8F280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2E0B229242BBED400E8F280 /* NuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E0B230242BBED400E8F280 /* NuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuUITests.swift; sourceTree = "<group>"; };
 		D2E0B232242BBED400E8F280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2E0B23E242BBEEF00E8F280 /* SettingsNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsNode.swift; sourceTree = "<group>"; };
@@ -147,8 +84,8 @@
 		D2E0B247242BC1EF00E8F280 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		D2E0B249242BC1FA00E8F280 /* MainConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
 		D2E0B24B242BC82200E8F280 /* Tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
-		D2E0B24E242BC98900E8F280 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		D2E0B251242BEE3800E8F280 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		D2E0B24E242BC98900E8F280 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		D2E0B251242BEE3800E8F280 /* BFFElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFFElement.swift; sourceTree = "<group>"; };
 		D9785B8CF4858DCD6A433951 /* Pods-NewNUnl-NewUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNUnl-NewUI.release.xcconfig"; path = "Target Support Files/Pods-NewNUnl-NewUI/Pods-NewNUnl-NewUI.release.xcconfig"; sourceTree = "<group>"; };
 		E84D791A42E0E3D09BFC2C42 /* Pods-NewNUnlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNUnlTests.debug.xcconfig"; path = "Target Support Files/Pods-NewNUnlTests/Pods-NewNUnlTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,49 +101,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D278EA2F242BB5B000C3978D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				047E0DE635FD544FBA4F6ADC /* Pods_NewNUnlTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D278EA3A242BB5B000C3978D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3236ED6F4E5F5359116C3FC1 /* Pods_NewNUnl_NewNUnlUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2E0B1E1242BBAA600E8F280 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2E0B204242BBDDD00E8F280 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D2E0B21E242BBED400E8F280 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6BD76585676B503ABA45C0C5 /* Pods_NewNUnl_NuUI.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2E0B226242BBED400E8F280 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2E0B22A242BBED400E8F280 /* NuUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,10 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				D278EA1E242BB5AF00C3978D /* NewNUnl */,
-				D278EA35242BB5B000C3978D /* NewNUnlTests */,
-				D278EA40242BB5B000C3978D /* NewNUnlUITests */,
-				D2E0B1EA242BBAA600E8F280 /* NUnlUITests */,
-				D2E0B20D242BBDDD00E8F280 /* NewUITests */,
 				D2E0B222242BBED400E8F280 /* NuUI */,
 				D2E0B22F242BBED400E8F280 /* NuUITests */,
 				D278EA1D242BB5AF00C3978D /* Products */,
@@ -262,12 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				D278EA1C242BB5AF00C3978D /* NewNUnl.app */,
-				D278EA32242BB5B000C3978D /* NewNUnlTests.xctest */,
-				D278EA3D242BB5B000C3978D /* NewNUnlUITests.xctest */,
-				D2E0B1E4242BBAA600E8F280 /* NUnlUITests.xctest */,
-				D2E0B207242BBDDD00E8F280 /* NewUITests.xctest */,
 				D2E0B221242BBED400E8F280 /* NuUI.framework */,
-				D2E0B229242BBED400E8F280 /* NuUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -275,8 +165,7 @@
 		D278EA1E242BB5AF00C3978D /* NewNUnl */ = {
 			isa = PBXGroup;
 			children = (
-				D278EA1F242BB5AF00C3978D /* AppDelegate.swift */,
-				D278EA21242BB5AF00C3978D /* SceneDelegate.swift */,
+				D2F6D12B2432109500DB4065 /* Resources */,
 				D2E0B24D242BC82900E8F280 /* Tracker */,
 				D2E0B242242BC1CD00E8F280 /* MainScene */,
 				D278EA28242BB5AF00C3978D /* Assets.xcassets */,
@@ -284,42 +173,6 @@
 				D278EA2D242BB5AF00C3978D /* Info.plist */,
 			);
 			path = NewNUnl;
-			sourceTree = "<group>";
-		};
-		D278EA35242BB5B000C3978D /* NewNUnlTests */ = {
-			isa = PBXGroup;
-			children = (
-				D278EA36242BB5B000C3978D /* NewNUnlTests.swift */,
-				D278EA38242BB5B000C3978D /* Info.plist */,
-			);
-			path = NewNUnlTests;
-			sourceTree = "<group>";
-		};
-		D278EA40242BB5B000C3978D /* NewNUnlUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D278EA41242BB5B000C3978D /* NewNUnlUITests.swift */,
-				D278EA43242BB5B000C3978D /* Info.plist */,
-			);
-			path = NewNUnlUITests;
-			sourceTree = "<group>";
-		};
-		D2E0B1EA242BBAA600E8F280 /* NUnlUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D2E0B1EB242BBAA600E8F280 /* NUnlUITests.swift */,
-				D2E0B1ED242BBAA600E8F280 /* Info.plist */,
-			);
-			path = NUnlUITests;
-			sourceTree = "<group>";
-		};
-		D2E0B20D242BBDDD00E8F280 /* NewUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D2E0B20E242BBDDD00E8F280 /* NewUITests.swift */,
-				D2E0B210242BBDDD00E8F280 /* Info.plist */,
-			);
-			path = NewUITests;
 			sourceTree = "<group>";
 		};
 		D2E0B222242BBED400E8F280 /* NuUI */ = {
@@ -365,10 +218,19 @@
 		D2E0B250242BC98E00E8F280 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D2E0B24E242BC98900E8F280 /* MainViewModel.swift */,
-				D2E0B251242BEE3800E8F280 /* MainModel.swift */,
+				D2E0B24E242BC98900E8F280 /* ViewModel.swift */,
+				D2E0B251242BEE3800E8F280 /* BFFElement.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D2F6D12B2432109500DB4065 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D278EA1F242BB5AF00C3978D /* AppDelegate.swift */,
+				D278EA21242BB5AF00C3978D /* SceneDelegate.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,81 +271,6 @@
 			productReference = D278EA1C242BB5AF00C3978D /* NewNUnl.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D278EA31242BB5B000C3978D /* NewNUnlTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D278EA49242BB5B000C3978D /* Build configuration list for PBXNativeTarget "NewNUnlTests" */;
-			buildPhases = (
-				36A07CB54DADE85312AEFE85 /* [CP] Check Pods Manifest.lock */,
-				D278EA2E242BB5B000C3978D /* Sources */,
-				D278EA2F242BB5B000C3978D /* Frameworks */,
-				D278EA30242BB5B000C3978D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D278EA34242BB5B000C3978D /* PBXTargetDependency */,
-			);
-			name = NewNUnlTests;
-			productName = NewNUnlTests;
-			productReference = D278EA32242BB5B000C3978D /* NewNUnlTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D278EA3C242BB5B000C3978D /* NewNUnlUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D278EA4C242BB5B000C3978D /* Build configuration list for PBXNativeTarget "NewNUnlUITests" */;
-			buildPhases = (
-				9770C3F686C87D3985240B27 /* [CP] Check Pods Manifest.lock */,
-				D278EA39242BB5B000C3978D /* Sources */,
-				D278EA3A242BB5B000C3978D /* Frameworks */,
-				D278EA3B242BB5B000C3978D /* Resources */,
-				A043B9AE50BB49945350F603 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D278EA3F242BB5B000C3978D /* PBXTargetDependency */,
-			);
-			name = NewNUnlUITests;
-			productName = NewNUnlUITests;
-			productReference = D278EA3D242BB5B000C3978D /* NewNUnlUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		D2E0B1E3242BBAA600E8F280 /* NUnlUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D2E0B1F9242BBAA600E8F280 /* Build configuration list for PBXNativeTarget "NUnlUITests" */;
-			buildPhases = (
-				D2E0B1E0242BBAA600E8F280 /* Sources */,
-				D2E0B1E1242BBAA600E8F280 /* Frameworks */,
-				D2E0B1E2242BBAA600E8F280 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D2E0B1E9242BBAA600E8F280 /* PBXTargetDependency */,
-			);
-			name = NUnlUITests;
-			productName = NUnlUITests;
-			productReference = D2E0B1E4242BBAA600E8F280 /* NUnlUITests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D2E0B206242BBDDD00E8F280 /* NewUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D2E0B21B242BBDDD00E8F280 /* Build configuration list for PBXNativeTarget "NewUITests" */;
-			buildPhases = (
-				D2E0B203242BBDDD00E8F280 /* Sources */,
-				D2E0B204242BBDDD00E8F280 /* Frameworks */,
-				D2E0B205242BBDDD00E8F280 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D2E0B20C242BBDDD00E8F280 /* PBXTargetDependency */,
-			);
-			name = NewUITests;
-			productName = NewUITests;
-			productReference = D2E0B207242BBDDD00E8F280 /* NewUITests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		D2E0B220242BBED400E8F280 /* NuUI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2E0B238242BBED400E8F280 /* Build configuration list for PBXNativeTarget "NuUI" */;
@@ -503,27 +290,6 @@
 			productReference = D2E0B221242BBED400E8F280 /* NuUI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D2E0B228242BBED400E8F280 /* NuUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D2E0B23B242BBED400E8F280 /* Build configuration list for PBXNativeTarget "NuUITests" */;
-			buildPhases = (
-				D2E0B225242BBED400E8F280 /* Sources */,
-				D2E0B226242BBED400E8F280 /* Frameworks */,
-				D2E0B227242BBED400E8F280 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D2E0B22C242BBED400E8F280 /* PBXTargetDependency */,
-				D2E0B22E242BBED400E8F280 /* PBXTargetDependency */,
-			);
-			name = NuUITests;
-			packageProductDependencies = (
-			);
-			productName = NuUITests;
-			productReference = D2E0B229242BBED400E8F280 /* NuUITests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -537,29 +303,9 @@
 					D278EA1B242BB5AF00C3978D = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
-					D278EA31242BB5B000C3978D = {
-						CreatedOnToolsVersion = 11.3.1;
-						TestTargetID = D278EA1B242BB5AF00C3978D;
-					};
-					D278EA3C242BB5B000C3978D = {
-						CreatedOnToolsVersion = 11.3.1;
-						TestTargetID = D278EA1B242BB5AF00C3978D;
-					};
-					D2E0B1E3242BBAA600E8F280 = {
-						CreatedOnToolsVersion = 11.3.1;
-						TestTargetID = D278EA1B242BB5AF00C3978D;
-					};
-					D2E0B206242BBDDD00E8F280 = {
-						CreatedOnToolsVersion = 11.3.1;
-						TestTargetID = D278EA1B242BB5AF00C3978D;
-					};
 					D2E0B220242BBED400E8F280 = {
 						CreatedOnToolsVersion = 11.3.1;
 						LastSwiftMigration = 1130;
-					};
-					D2E0B228242BBED400E8F280 = {
-						CreatedOnToolsVersion = 11.3.1;
-						TestTargetID = D278EA1B242BB5AF00C3978D;
 					};
 				};
 			};
@@ -577,12 +323,7 @@
 			projectRoot = "";
 			targets = (
 				D278EA1B242BB5AF00C3978D /* NewNUnl */,
-				D278EA31242BB5B000C3978D /* NewNUnlTests */,
-				D278EA3C242BB5B000C3978D /* NewNUnlUITests */,
-				D2E0B1E3242BBAA600E8F280 /* NUnlUITests */,
-				D2E0B206242BBDDD00E8F280 /* NewUITests */,
 				D2E0B220242BBED400E8F280 /* NuUI */,
-				D2E0B228242BBED400E8F280 /* NuUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -597,42 +338,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D278EA30242BB5B000C3978D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D278EA3B242BB5B000C3978D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2E0B1E2242BBAA600E8F280 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2E0B205242BBDDD00E8F280 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D2E0B21F242BBED400E8F280 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2E0B227242BBED400E8F280 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -642,28 +348,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		36A07CB54DADE85312AEFE85 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NewNUnlTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6DEE7AA51285B4121DCFFA4C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -679,45 +363,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewNUnl/Pods-NewNUnl-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9770C3F686C87D3985240B27 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NewNUnl-NewNUnlUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A043B9AE50BB49945350F603 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NewNUnl-NewNUnlUITests/Pods-NewNUnl-NewNUnlUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NewNUnl-NewNUnlUITests/Pods-NewNUnl-NewNUnlUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewNUnl-NewNUnlUITests/Pods-NewNUnl-NewNUnlUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A4569BD2C9039820E21FC695 /* [CP] Check Pods Manifest.lock */ = {
@@ -774,45 +419,13 @@
 				D2E0B246242BC1E600E8F280 /* MainPresenter.swift in Sources */,
 				D2E0B241242BC1C700E8F280 /* MainViewController.swift in Sources */,
 				D278EA20242BB5AF00C3978D /* AppDelegate.swift in Sources */,
-				D2E0B24F242BC98900E8F280 /* MainViewModel.swift in Sources */,
+				D2E0B24F242BC98900E8F280 /* ViewModel.swift in Sources */,
 				D278EA22242BB5AF00C3978D /* SceneDelegate.swift in Sources */,
 				D2E0B24C242BC82200E8F280 /* Tracker.swift in Sources */,
 				D2E0B24A242BC1FA00E8F280 /* MainConfigurator.swift in Sources */,
 				D2E0B244242BC1DD00E8F280 /* MainInteractor.swift in Sources */,
-				D2E0B252242BEE3800E8F280 /* MainModel.swift in Sources */,
+				D2E0B252242BEE3800E8F280 /* BFFElement.swift in Sources */,
 				D2E0B248242BC1EF00E8F280 /* MainRouter.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D278EA2E242BB5B000C3978D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D278EA37242BB5B000C3978D /* NewNUnlTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D278EA39242BB5B000C3978D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D278EA42242BB5B000C3978D /* NewNUnlUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2E0B1E0242BBAA600E8F280 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2E0B1EC242BBAA600E8F280 /* NUnlUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2E0B203242BBDDD00E8F280 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2E0B20F242BBDDD00E8F280 /* NewUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -824,47 +437,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D2E0B225242BBED400E8F280 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2E0B231242BBED400E8F280 /* NuUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D278EA34242BB5B000C3978D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D278EA1B242BB5AF00C3978D /* NewNUnl */;
-			targetProxy = D278EA33242BB5B000C3978D /* PBXContainerItemProxy */;
-		};
-		D278EA3F242BB5B000C3978D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D278EA1B242BB5AF00C3978D /* NewNUnl */;
-			targetProxy = D278EA3E242BB5B000C3978D /* PBXContainerItemProxy */;
-		};
-		D2E0B1E9242BBAA600E8F280 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D278EA1B242BB5AF00C3978D /* NewNUnl */;
-			targetProxy = D2E0B1E8242BBAA600E8F280 /* PBXContainerItemProxy */;
-		};
-		D2E0B20C242BBDDD00E8F280 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D278EA1B242BB5AF00C3978D /* NewNUnl */;
-			targetProxy = D2E0B20B242BBDDD00E8F280 /* PBXContainerItemProxy */;
-		};
-		D2E0B22C242BBED400E8F280 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D2E0B220242BBED400E8F280 /* NuUI */;
-			targetProxy = D2E0B22B242BBED400E8F280 /* PBXContainerItemProxy */;
-		};
-		D2E0B22E242BBED400E8F280 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D278EA1B242BB5AF00C3978D /* NewNUnl */;
-			targetProxy = D2E0B22D242BBED400E8F280 /* PBXContainerItemProxy */;
-		};
 		D2E0B235242BBED400E8F280 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D2E0B220242BBED400E8F280 /* NuUI */;
@@ -1038,174 +613,6 @@
 			};
 			name = Release;
 		};
-		D278EA4A242BB5B000C3978D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E84D791A42E0E3D09BFC2C42 /* Pods-NewNUnlTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BS64L7F579;
-				INFOPLIST_FILE = NewNUnlTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kharchevskyi.NewNUnlTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewNUnl.app/NewNUnl";
-			};
-			name = Debug;
-		};
-		D278EA4B242BB5B000C3978D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F1E4598D68B3B359FAE79EC /* Pods-NewNUnlTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BS64L7F579;
-				INFOPLIST_FILE = NewNUnlTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kharchevskyi.NewNUnlTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewNUnl.app/NewNUnl";
-			};
-			name = Release;
-		};
-		D278EA4D242BB5B000C3978D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 553C4997A45299B96FC9E1D8 /* Pods-NewNUnl-NewNUnlUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BS64L7F579;
-				INFOPLIST_FILE = NewNUnlUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kharchevskyi.NewNUnlUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NewNUnl;
-			};
-			name = Debug;
-		};
-		D278EA4E242BB5B000C3978D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFC80F3A0F8296333ED6647A /* Pods-NewNUnl-NewNUnlUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BS64L7F579;
-				INFOPLIST_FILE = NewNUnlUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kharchevskyi.NewNUnlUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NewNUnl;
-			};
-			name = Release;
-		};
-		D2E0B1F6242BBAA600E8F280 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BS64L7F579;
-				INFOPLIST_FILE = NUnlUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kharchevskyi.NUnlUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewNUnl.app/NewNUnl";
-			};
-			name = Debug;
-		};
-		D2E0B1F7242BBAA600E8F280 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BS64L7F579;
-				INFOPLIST_FILE = NUnlUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kharchevskyi.NUnlUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewNUnl.app/NewNUnl";
-			};
-			name = Release;
-		};
-		D2E0B218242BBDDD00E8F280 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BS64L7F579;
-				INFOPLIST_FILE = NewUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kharchevskyi.NewUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewNUnl.app/NewNUnl";
-			};
-			name = Debug;
-		};
-		D2E0B219242BBDDD00E8F280 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BS64L7F579;
-				INFOPLIST_FILE = NewUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kharchevskyi.NewUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewNUnl.app/NewNUnl";
-			};
-			name = Release;
-		};
 		D2E0B239242BBED400E8F280 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3A81073B8321F8546A27E6E3 /* Pods-NewNUnl-NuUI.debug.xcconfig */;
@@ -1265,46 +672,6 @@
 			};
 			name = Release;
 		};
-		D2E0B23C242BBED400E8F280 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BS64L7F579;
-				INFOPLIST_FILE = NuUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kharchevskyi.NuUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewNUnl.app/NewNUnl";
-			};
-			name = Debug;
-		};
-		D2E0B23D242BBED400E8F280 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BS64L7F579;
-				INFOPLIST_FILE = NuUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kharchevskyi.NuUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewNUnl.app/NewNUnl";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1326,56 +693,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D278EA49242BB5B000C3978D /* Build configuration list for PBXNativeTarget "NewNUnlTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D278EA4A242BB5B000C3978D /* Debug */,
-				D278EA4B242BB5B000C3978D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D278EA4C242BB5B000C3978D /* Build configuration list for PBXNativeTarget "NewNUnlUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D278EA4D242BB5B000C3978D /* Debug */,
-				D278EA4E242BB5B000C3978D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D2E0B1F9242BBAA600E8F280 /* Build configuration list for PBXNativeTarget "NUnlUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D2E0B1F6242BBAA600E8F280 /* Debug */,
-				D2E0B1F7242BBAA600E8F280 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D2E0B21B242BBDDD00E8F280 /* Build configuration list for PBXNativeTarget "NewUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D2E0B218242BBDDD00E8F280 /* Debug */,
-				D2E0B219242BBDDD00E8F280 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		D2E0B238242BBED400E8F280 /* Build configuration list for PBXNativeTarget "NuUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D2E0B239242BBED400E8F280 /* Debug */,
 				D2E0B23A242BBED400E8F280 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D2E0B23B242BBED400E8F280 /* Build configuration list for PBXNativeTarget "NuUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D2E0B23C242BBED400E8F280 /* Debug */,
-				D2E0B23D242BBED400E8F280 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -22,11 +22,11 @@ final class MainViewController: ASViewController<ASTableNode> {
     enum State {
         case idle
         case loading
-        case finishedLoading([MainViewModel])
+        case finishedLoading([ViewModel])
     }
 
     enum Action {
-        case tapOnMenu(_ type: MainSettingType)
+        case tapOnMenu(_ type: BFFElementType)
         case scroll(_ percent: CGFloat)
     }
 
@@ -47,20 +47,6 @@ final class MainViewController: ASViewController<ASTableNode> {
     override func viewDidLoad() {
         super.viewDidLoad()
         output?.setup()
-    }
-}
-
-extension MainViewController: MainViewControllerInput {
-    func update(with newState: MainViewController.State) {
-        self.state = newState
-        switch state {
-        case .idle:
-            break // do nothing
-        case .loading:
-            node.reloadData()
-        case .finishedLoading:
-            node.reloadData()
-        }
     }
 }
 
@@ -88,7 +74,7 @@ extension MainViewController: ASTableDelegate, ASTableDataSource {
     func tableNode(_ tableNode: ASTableNode, didSelectRowAt indexPath: IndexPath) {
         switch state {
         case .finishedLoading(let models):
-            let type = models[indexPath.row].settingType
+            let type = models[indexPath.row].elementType
             output?.handle(action: .tapOnMenu(type))
         default:
             break
@@ -96,3 +82,16 @@ extension MainViewController: ASTableDelegate, ASTableDataSource {
     }
 }
 
+extension MainViewController: MainViewControllerInput {
+    func update(with newState: MainViewController.State) {
+        self.state = newState
+        switch state {
+        case .idle:
+            break // do nothing
+        case .loading:
+            node.reloadData()
+        case .finishedLoading:
+            node.reloadData()
+        }
+    }
+}

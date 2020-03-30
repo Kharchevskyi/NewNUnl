@@ -8,15 +8,14 @@
 
 import AsyncDisplayKit
 
-enum MainSettingType: String, CaseIterable {
+enum BFFElementType: String, CaseIterable {
     case login, mijnNu, notification, save, feedback
 }
 
-typealias ProfileActionType = (MainSettingType) -> Void
+typealias ProfileActionType = (BFFElementType) -> Void
 
-struct MainViewModel {
-    var settingType: MainSettingType
+struct ViewModel {
+    var elementType: BFFElementType
     var node: ASCellNodeBlock
-
     var onTap: ProfileActionType?
 }
