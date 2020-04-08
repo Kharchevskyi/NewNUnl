@@ -37,7 +37,13 @@
 * Add possibility to handle tap events from view model based on it type 
 
 
+
+
+
+
+
 ### Problems described in current app
+
 1) Modularisation 
 2) CellModelFactory - Solved with type safe enum cases
 3) Inheritance - No inheritance. No UI inheritance. 
