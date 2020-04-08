@@ -8,6 +8,7 @@
 
 import AsyncDisplayKit
 import NuUI
+import Mapper
 
 protocol MainViewControllerInput {
     func update(with state: MainViewController.State)

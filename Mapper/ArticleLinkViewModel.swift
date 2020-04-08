@@ -1,35 +1,32 @@
 //
 //  ArticleLinkViewModel.swift
-//  NewNUnl
+//  Mapper
 //
 //  Created by Anton Kharchevskyi on 08/04/2020.
 //  Copyright © 2020 Anton Kharchevskyi. All rights reserved.
 //
 
-import Foundation
-import NuUI
-import NUCommon
 import AsyncDisplayKit
+import NuUI
 
-struct ArticleLinkViewModel: BFFViewModel {
+public struct ArticleLinkViewModel: BFFViewModel {
 
-    var onTap: BFFElementTapAction?
+    public var onTap: BFFElementTapAction?
 
     private let urlString: String
 
-    init(urlString: String) {
+    public init(urlString: String) {
         self.urlString = urlString
     }
 
-    func node() -> ASCellNodeBlock {
+    public func node() -> ASCellNodeBlock {
         {
-            let input = LinkNode.Input(urlAtributedString: self.urlString.attributed(with: 12, color: .blue))
+            let input = LinkNode.Input(urlAtributedString: self.urlString.attributed(with: 20, color: .blue))
             return LinkNode(input: input)
         }
     }
 
-    func elementType() -> BFFElementType {
+    public func elementType() -> BFFElementType {
          BFFElementType.articleLink(URL(string: urlString)!)
     }
 }
-

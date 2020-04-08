@@ -11,13 +11,8 @@ target 'NewNUnl' do
     pod 'Texture'
   end
 
-  target 'NewNUnlTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'NewNUnlUITests' do
-    # Pods for testing
+  target 'Mapper' do
+    pod 'Texture'
   end
 
 end

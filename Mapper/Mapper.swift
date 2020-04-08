@@ -1,0 +1,41 @@
+//
+//  Mapper.swift
+//  Mapper
+//
+//  Created by Anton Kharchevskyi on 08/04/2020.
+//  Copyright © 2020 Anton Kharchevskyi. All rights reserved.
+//
+
+
+import UIKit
+import BFF
+
+public struct Mapper {
+    public init() { }
+
+    public func map(_ elements: [BFFElement]) -> [BFFViewModel] {
+        elements.compactMap(mapElement)
+    }
+
+    private func mapElement(_ bffElement: BFFElement) -> BFFViewModel? {
+        switch bffElement {
+        case .articleLink(let bffArticleLink):
+            return ArticleLinkViewModel(urlString: bffArticleLink.urlString)
+        default:
+            assertionFailure("This bffElement element \(bffElement) is not supported")
+            return nil
+        }
+    }
+}
+
+extension String {
+    func attributed(with fontSize: Int, color: UIColor) -> NSAttributedString {
+        NSAttributedString(
+            string: self,
+            attributes: [
+                NSAttributedString.Key.font : UIFont.systemFont(ofSize: CGFloat(fontSize)),
+                NSAttributedString.Key.foregroundColor : color
+            ]
+        )
+    }
+}

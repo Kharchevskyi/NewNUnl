@@ -11,7 +11,7 @@ import NuUI
 import UIKit
 import NUCommon
 import BFF
-//import Mapper
+import Mapper 
 
 protocol MainPresenterInput {
     func update(with updateType: MainPresenter.Update)
@@ -35,12 +35,12 @@ struct MainPresenter {
 
     private let output: MainPresenterOutput
     private let router: MainRouting
-//    private let mapper: Mapper
+    private let mapper: Mapper
 
-    init(output: MainPresenterOutput, router: MainRouting) {
+    init(output: MainPresenterOutput, router: MainRouting, mapper: Mapper) {
         self.output = output
         self.router = router
-//        self.mapper = mapper
+        self.mapper = mapper
     }
 }
 
@@ -49,9 +49,9 @@ extension MainPresenter: MainPresenterInput {
         DispatchQueue.main.async {
             switch updateType {
             case .loadedElements(let elements):
-                // map all business models from bff to view representabke
-//                let viewModels = elements.compactMap(self.mapBFFElementToViewRepresentable)
-//                self.output.update(with: .finishedLoading(viewModels))
+                // map all business models from bff to view representable
+                let viewModels = self.mapper.map(elements)
+                self.output.update(with: .finishedLoading(viewModels))
                 break
             case .startLoading:
                 let node = ActivityIndicatorNode(input: ActivityIndicatorNode.Input(color: .red, nodeHeight: UIScreen.main.bounds.height))

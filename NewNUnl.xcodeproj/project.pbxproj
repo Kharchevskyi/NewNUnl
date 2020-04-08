@@ -8,13 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		30F22982FABE373E2FD16378 /* Pods_NewNUnl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9AEC10F6E73F321EA486E5A /* Pods_NewNUnl.framework */; };
+		3AFBDED1CDFBB66A678607C2 /* Pods_NewNUnl_Mapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F464DBD5159C16150E4A713F /* Pods_NewNUnl_Mapper.framework */; };
 		6BD76585676B503ABA45C0C5 /* Pods_NewNUnl_NuUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2AD9754A796B449E498D467 /* Pods_NewNUnl_NuUI.framework */; };
 		D25313D3243E4AC9005760B4 /* BFF in Frameworks */ = {isa = PBXBuildFile; productRef = D25313D2243E4AC9005760B4 /* BFF */; };
 		D25313D5243E4BF3005760B4 /* ActivityIndicatorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25313D4243E4BF3005760B4 /* ActivityIndicatorNode.swift */; };
 		D25313D7243E4D3B005760B4 /* CellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25313D6243E4D3B005760B4 /* CellNode.swift */; };
 		D25313DD243E53B2005760B4 /* LinkNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25313DC243E53B2005760B4 /* LinkNode.swift */; };
-		D25313E7243E5ED9005760B4 /* ArticleLinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25313E6243E5ED9005760B4 /* ArticleLinkViewModel.swift */; };
-		D25313E9243E5EEA005760B4 /* BFFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25313E8243E5EEA005760B4 /* BFFViewModel.swift */; };
+		D253141A243E616B005760B4 /* Mapper.h in Headers */ = {isa = PBXBuildFile; fileRef = D2531418243E616B005760B4 /* Mapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D253141D243E616B005760B4 /* Mapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2531416243E616B005760B4 /* Mapper.framework */; };
+		D253141E243E616B005760B4 /* Mapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D2531416243E616B005760B4 /* Mapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D2531423243E6174005760B4 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2531422243E6174005760B4 /* Mapper.swift */; };
+		D2531425243E6302005760B4 /* ArticleLinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2531424243E6302005760B4 /* ArticleLinkViewModel.swift */; };
+		D2531427243E632D005760B4 /* BFFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2531426243E632D005760B4 /* BFFViewModel.swift */; };
+		D2531429243E6355005760B4 /* BFFElementType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2531428243E6355005760B4 /* BFFElementType.swift */; };
+		D253142B243E651A005760B4 /* BFF in Frameworks */ = {isa = PBXBuildFile; productRef = D253142A243E651A005760B4 /* BFF */; };
+		D253142C243E656E005760B4 /* NuUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E0B221242BBED400E8F280 /* NuUI.framework */; };
 		D278EA20242BB5AF00C3978D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278EA1F242BB5AF00C3978D /* AppDelegate.swift */; };
 		D278EA22242BB5AF00C3978D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278EA21242BB5AF00C3978D /* SceneDelegate.swift */; };
 		D278EA29242BB5AF00C3978D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D278EA28242BB5AF00C3978D /* Assets.xcassets */; };
@@ -33,6 +41,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D253141B243E616B005760B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D278EA14242BB5AF00C3978D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2531415243E616B005760B4;
+			remoteInfo = Mapper;
+		};
 		D2E0B234242BBED400E8F280 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D278EA14242BB5AF00C3978D /* Project object */;
@@ -50,6 +65,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				D2E0B237242BBED400E8F280 /* NuUI.framework in Embed Frameworks */,
+				D253141E243E616B005760B4 /* Mapper.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,9 +75,11 @@
 /* Begin PBXFileReference section */
 		0CB496D7643DC9030BF2A89A /* Pods_NewNUnl_NewUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewNUnl_NewUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A81073B8321F8546A27E6E3 /* Pods-NewNUnl-NuUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNUnl-NuUI.debug.xcconfig"; path = "Target Support Files/Pods-NewNUnl-NuUI/Pods-NewNUnl-NuUI.debug.xcconfig"; sourceTree = "<group>"; };
+		48AC785A6EC30631C7F7E975 /* Pods-NewNUnl-Mapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNUnl-Mapper.release.xcconfig"; path = "Target Support Files/Pods-NewNUnl-Mapper/Pods-NewNUnl-Mapper.release.xcconfig"; sourceTree = "<group>"; };
 		553C4997A45299B96FC9E1D8 /* Pods-NewNUnl-NewNUnlUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNUnl-NewNUnlUITests.debug.xcconfig"; path = "Target Support Files/Pods-NewNUnl-NewNUnlUITests/Pods-NewNUnl-NewNUnlUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5F1E4598D68B3B359FAE79EC /* Pods-NewNUnlTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNUnlTests.release.xcconfig"; path = "Target Support Files/Pods-NewNUnlTests/Pods-NewNUnlTests.release.xcconfig"; sourceTree = "<group>"; };
 		69ABA4C3925C3976CD800CB0 /* Pods_NewNUnl_NewNUnlUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewNUnl_NewNUnlUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A198CDD9DED7E9662B8FD28 /* Pods-NewNUnl-Mapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNUnl-Mapper.debug.xcconfig"; path = "Target Support Files/Pods-NewNUnl-Mapper/Pods-NewNUnl-Mapper.debug.xcconfig"; sourceTree = "<group>"; };
 		9D10A4AF30B6100AC61571B6 /* Pods-NewNUnl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNUnl.release.xcconfig"; path = "Target Support Files/Pods-NewNUnl/Pods-NewNUnl.release.xcconfig"; sourceTree = "<group>"; };
 		B9AEC10F6E73F321EA486E5A /* Pods_NewNUnl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewNUnl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC80F3A0F8296333ED6647A /* Pods-NewNUnl-NewNUnlUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNUnl-NewNUnlUITests.release.xcconfig"; path = "Target Support Files/Pods-NewNUnl-NewNUnlUITests/Pods-NewNUnl-NewNUnlUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -72,8 +90,13 @@
 		D25313D4243E4BF3005760B4 /* ActivityIndicatorNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorNode.swift; sourceTree = "<group>"; };
 		D25313D6243E4D3B005760B4 /* CellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellNode.swift; sourceTree = "<group>"; };
 		D25313DC243E53B2005760B4 /* LinkNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkNode.swift; sourceTree = "<group>"; };
-		D25313E6243E5ED9005760B4 /* ArticleLinkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleLinkViewModel.swift; sourceTree = "<group>"; };
-		D25313E8243E5EEA005760B4 /* BFFViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFFViewModel.swift; sourceTree = "<group>"; };
+		D2531416243E616B005760B4 /* Mapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2531418243E616B005760B4 /* Mapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mapper.h; sourceTree = "<group>"; };
+		D2531419243E616B005760B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2531422243E6174005760B4 /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		D2531424243E6302005760B4 /* ArticleLinkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleLinkViewModel.swift; sourceTree = "<group>"; };
+		D2531426243E632D005760B4 /* BFFViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFFViewModel.swift; sourceTree = "<group>"; };
+		D2531428243E6355005760B4 /* BFFElementType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFFElementType.swift; sourceTree = "<group>"; };
 		D278EA1C242BB5AF00C3978D /* NewNUnl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewNUnl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D278EA1F242BB5AF00C3978D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D278EA21242BB5AF00C3978D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,8 +107,6 @@
 		D2E0B221242BBED400E8F280 /* NuUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NuUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E0B223242BBED400E8F280 /* NuUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NuUI.h; sourceTree = "<group>"; };
 		D2E0B224242BBED400E8F280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2E0B230242BBED400E8F280 /* NuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuUITests.swift; sourceTree = "<group>"; };
-		D2E0B232242BBED400E8F280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2E0B23E242BBEEF00E8F280 /* SettingsNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsNode.swift; sourceTree = "<group>"; };
 		D2E0B240242BC1C700E8F280 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D2E0B243242BC1DD00E8F280 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
@@ -95,9 +116,20 @@
 		D2E0B24B242BC82200E8F280 /* Tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
 		D9785B8CF4858DCD6A433951 /* Pods-NewNUnl-NewUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNUnl-NewUI.release.xcconfig"; path = "Target Support Files/Pods-NewNUnl-NewUI/Pods-NewNUnl-NewUI.release.xcconfig"; sourceTree = "<group>"; };
 		E84D791A42E0E3D09BFC2C42 /* Pods-NewNUnlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNUnlTests.debug.xcconfig"; path = "Target Support Files/Pods-NewNUnlTests/Pods-NewNUnlTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F464DBD5159C16150E4A713F /* Pods_NewNUnl_Mapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewNUnl_Mapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D2531413243E616B005760B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D253142C243E656E005760B4 /* NuUI.framework in Frameworks */,
+				3AFBDED1CDFBB66A678607C2 /* Pods_NewNUnl_Mapper.framework in Frameworks */,
+				D253142B243E651A005760B4 /* BFF in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D278EA19242BB5AF00C3978D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -105,6 +137,7 @@
 				D2E0B258242BF64100E8F280 /* NUCommon in Frameworks */,
 				D25313D3243E4AC9005760B4 /* BFF in Frameworks */,
 				30F22982FABE373E2FD16378 /* Pods_NewNUnl.framework in Frameworks */,
+				D253141D243E616B005760B4 /* Mapper.framework in Frameworks */,
 				D2E0B236242BBED400E8F280 /* NuUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -128,6 +161,7 @@
 				D2C496E0BF1F757885288636 /* Pods_NewNUnlTests.framework */,
 				0CB496D7643DC9030BF2A89A /* Pods_NewNUnl_NewUI.framework */,
 				C2AD9754A796B449E498D467 /* Pods_NewNUnl_NuUI.framework */,
+				F464DBD5159C16150E4A713F /* Pods_NewNUnl_Mapper.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -145,8 +179,23 @@
 				D9785B8CF4858DCD6A433951 /* Pods-NewNUnl-NewUI.release.xcconfig */,
 				3A81073B8321F8546A27E6E3 /* Pods-NewNUnl-NuUI.debug.xcconfig */,
 				D1670084030B93F628C9EF4C /* Pods-NewNUnl-NuUI.release.xcconfig */,
+				8A198CDD9DED7E9662B8FD28 /* Pods-NewNUnl-Mapper.debug.xcconfig */,
+				48AC785A6EC30631C7F7E975 /* Pods-NewNUnl-Mapper.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D2531417243E616B005760B4 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				D2531418243E616B005760B4 /* Mapper.h */,
+				D2531419243E616B005760B4 /* Info.plist */,
+				D2531422243E6174005760B4 /* Mapper.swift */,
+				D2531428243E6355005760B4 /* BFFElementType.swift */,
+				D2531424243E6302005760B4 /* ArticleLinkViewModel.swift */,
+				D2531426243E632D005760B4 /* BFFViewModel.swift */,
+			);
+			path = Mapper;
 			sourceTree = "<group>";
 		};
 		D278EA13242BB5AF00C3978D = {
@@ -154,7 +203,7 @@
 			children = (
 				D278EA1E242BB5AF00C3978D /* NewNUnl */,
 				D2E0B222242BBED400E8F280 /* NuUI */,
-				D2E0B22F242BBED400E8F280 /* NuUITests */,
+				D2531417243E616B005760B4 /* Mapper */,
 				D278EA1D242BB5AF00C3978D /* Products */,
 				6CB5D306E22D28B0DC69E631 /* Pods */,
 				6A1E80A89CAB5CEE2845D62F /* Frameworks */,
@@ -166,6 +215,7 @@
 			children = (
 				D278EA1C242BB5AF00C3978D /* NewNUnl.app */,
 				D2E0B221242BBED400E8F280 /* NuUI.framework */,
+				D2531416243E616B005760B4 /* Mapper.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,15 +246,6 @@
 			path = NuUI;
 			sourceTree = "<group>";
 		};
-		D2E0B22F242BBED400E8F280 /* NuUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D2E0B230242BBED400E8F280 /* NuUITests.swift */,
-				D2E0B232242BBED400E8F280 /* Info.plist */,
-			);
-			path = NuUITests;
-			sourceTree = "<group>";
-		};
 		D2E0B242242BC1CD00E8F280 /* MainScene */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,7 +254,6 @@
 				D2E0B243242BC1DD00E8F280 /* MainInteractor.swift */,
 				D2E0B245242BC1E600E8F280 /* MainPresenter.swift */,
 				D2E0B247242BC1EF00E8F280 /* MainRouter.swift */,
-				D2E0B250242BC98E00E8F280 /* Models */,
 			);
 			path = MainScene;
 			sourceTree = "<group>";
@@ -224,15 +264,6 @@
 				D2E0B24B242BC82200E8F280 /* Tracker.swift */,
 			);
 			path = Tracker;
-			sourceTree = "<group>";
-		};
-		D2E0B250242BC98E00E8F280 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				D25313E6243E5ED9005760B4 /* ArticleLinkViewModel.swift */,
-				D25313E8243E5EEA005760B4 /* BFFViewModel.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		D2F6D12B2432109500DB4065 /* Resources */ = {
@@ -247,6 +278,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		D2531411243E616B005760B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D253141A243E616B005760B4 /* Mapper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2E0B21C242BBED400E8F280 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,6 +297,28 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		D2531415243E616B005760B4 /* Mapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2531421243E616B005760B4 /* Build configuration list for PBXNativeTarget "Mapper" */;
+			buildPhases = (
+				2AF4F8A986C864510EED6072 /* [CP] Check Pods Manifest.lock */,
+				D2531411243E616B005760B4 /* Headers */,
+				D2531412243E616B005760B4 /* Sources */,
+				D2531413243E616B005760B4 /* Frameworks */,
+				D2531414243E616B005760B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mapper;
+			packageProductDependencies = (
+				D253142A243E651A005760B4 /* BFF */,
+			);
+			productName = Mapper;
+			productReference = D2531416243E616B005760B4 /* Mapper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		D278EA1B242BB5AF00C3978D /* NewNUnl */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D278EA46242BB5B000C3978D /* Build configuration list for PBXNativeTarget "NewNUnl" */;
@@ -273,6 +334,7 @@
 			);
 			dependencies = (
 				D2E0B235242BBED400E8F280 /* PBXTargetDependency */,
+				D253141C243E616B005760B4 /* PBXTargetDependency */,
 			);
 			name = NewNUnl;
 			packageProductDependencies = (
@@ -312,6 +374,10 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Anton Kharchevskyi";
 				TargetAttributes = {
+					D2531415243E616B005760B4 = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
 					D278EA1B242BB5AF00C3978D = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -336,11 +402,19 @@
 			targets = (
 				D278EA1B242BB5AF00C3978D /* NewNUnl */,
 				D2E0B220242BBED400E8F280 /* NuUI */,
+				D2531415243E616B005760B4 /* Mapper */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D2531414243E616B005760B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D278EA1A242BB5AF00C3978D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -360,6 +434,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2AF4F8A986C864510EED6072 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NewNUnl-Mapper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6DEE7AA51285B4121DCFFA4C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -424,6 +520,17 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D2531412243E616B005760B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2531423243E6174005760B4 /* Mapper.swift in Sources */,
+				D2531429243E6355005760B4 /* BFFElementType.swift in Sources */,
+				D2531425243E6302005760B4 /* ArticleLinkViewModel.swift in Sources */,
+				D2531427243E632D005760B4 /* BFFViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D278EA18242BB5AF00C3978D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -432,8 +539,6 @@
 				D2E0B241242BC1C700E8F280 /* MainViewController.swift in Sources */,
 				D278EA20242BB5AF00C3978D /* AppDelegate.swift in Sources */,
 				D278EA22242BB5AF00C3978D /* SceneDelegate.swift in Sources */,
-				D25313E7243E5ED9005760B4 /* ArticleLinkViewModel.swift in Sources */,
-				D25313E9243E5EEA005760B4 /* BFFViewModel.swift in Sources */,
 				D2E0B24C242BC82200E8F280 /* Tracker.swift in Sources */,
 				D2E0B24A242BC1FA00E8F280 /* MainConfigurator.swift in Sources */,
 				D2E0B244242BC1DD00E8F280 /* MainInteractor.swift in Sources */,
@@ -455,6 +560,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D253141C243E616B005760B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2531415243E616B005760B4 /* Mapper */;
+			targetProxy = D253141B243E616B005760B4 /* PBXContainerItemProxy */;
+		};
 		D2E0B235242BBED400E8F280 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D2E0B220242BBED400E8F280 /* NuUI */;
@@ -474,6 +584,65 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D253141F243E616B005760B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A198CDD9DED7E9662B8FD28 /* Pods-NewNUnl-Mapper.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BS64L7F579;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Mapper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kharchevskyi.Mapper;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D2531420243E616B005760B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48AC785A6EC30631C7F7E975 /* Pods-NewNUnl-Mapper.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BS64L7F579;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Mapper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kharchevskyi.Mapper;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		D278EA44242BB5B000C3978D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -690,6 +859,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D2531421243E616B005760B4 /* Build configuration list for PBXNativeTarget "Mapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D253141F243E616B005760B4 /* Debug */,
+				D2531420243E616B005760B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D278EA17242BB5AF00C3978D /* Build configuration list for PBXProject "NewNUnl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -721,6 +899,10 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		D25313D2243E4AC9005760B4 /* BFF */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BFF;
+		};
+		D253142A243E651A005760B4 /* BFF */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = BFF;
 		};
