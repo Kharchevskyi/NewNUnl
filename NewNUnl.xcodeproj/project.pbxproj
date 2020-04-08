@@ -228,8 +228,7 @@
 				D2531418243E616B005760B4 /* Mapper.h */,
 				D2531419243E616B005760B4 /* Info.plist */,
 				D2531422243E6174005760B4 /* Mapper.swift */,
-				D2531428243E6355005760B4 /* BFFAppElement.swift */,
-				D253145D243E7797005760B4 /* ViewModels */,
+				D253145D243E7797005760B4 /* ViewModels  */,
 			);
 			path = Mapper;
 			sourceTree = "<group>";
@@ -247,15 +246,16 @@
 			path = CardBoard;
 			sourceTree = "<group>";
 		};
-		D253145D243E7797005760B4 /* ViewModels */ = {
+		D253145D243E7797005760B4 /* ViewModels  */ = {
 			isa = PBXGroup;
 			children = (
+				D2531428243E6355005760B4 /* BFFAppElement.swift */,
 				D2531426243E632D005760B4 /* BFFViewModel.swift */,
 				D2531424243E6302005760B4 /* ArticleLinkViewModel.swift */,
 				D253142D243E6647005760B4 /* SettingsViewModel.swift */,
 				D253145E243E78E4005760B4 /* MoreViewModel.swift */,
 			);
-			path = ViewModels;
+			path = "ViewModels ";
 			sourceTree = "<group>";
 		};
 		D278EA13242BB5AF00C3978D = {
