@@ -28,6 +28,8 @@ public struct Mapper {
             case .login:
                 return SettingsViewModel(title: bffSettings.rawValue)
             }
+//        case .more(let moreModel):
+//            return MoreViewModel(title: moreModel.title)
         default:
             assertionFailure("This bffElement element \(bffElement) is not supported")
             return nil

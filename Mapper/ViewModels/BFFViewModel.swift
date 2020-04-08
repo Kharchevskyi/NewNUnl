@@ -15,5 +15,5 @@ public typealias BFFElementTapAction = () -> Void
 public protocol BFFViewModel {
     var onTap: BFFElementTapAction? { get set }
     func node() -> ASCellNodeBlock
-    func elementType() -> BFFElementType
+    func elementType() -> BFFAppElement
 }

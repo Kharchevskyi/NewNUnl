@@ -11,7 +11,7 @@
 		30F22982FABE373E2FD16378 /* Pods_NewNUnl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9AEC10F6E73F321EA486E5A /* Pods_NewNUnl.framework */; };
 		3AFBDED1CDFBB66A678607C2 /* Pods_NewNUnl_Mapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F464DBD5159C16150E4A713F /* Pods_NewNUnl_Mapper.framework */; };
 		6BD76585676B503ABA45C0C5 /* Pods_NewNUnl_NuUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2AD9754A796B449E498D467 /* Pods_NewNUnl_NuUI.framework */; };
-		D25313D3243E4AC9005760B4 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = D25313D2243E4AC9005760B4 /* SwiftPackageProductDependency */; };
+		D25313D3243E4AC9005760B4 /* BFF in Frameworks */ = {isa = PBXBuildFile; productRef = D25313D2243E4AC9005760B4 /* BFF */; };
 		D25313D5243E4BF3005760B4 /* ActivityIndicatorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25313D4243E4BF3005760B4 /* ActivityIndicatorNode.swift */; };
 		D25313D7243E4D3B005760B4 /* CellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25313D6243E4D3B005760B4 /* CellNode.swift */; };
 		D25313DD243E53B2005760B4 /* LinkNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25313DC243E53B2005760B4 /* LinkNode.swift */; };
@@ -21,8 +21,8 @@
 		D2531423243E6174005760B4 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2531422243E6174005760B4 /* Mapper.swift */; };
 		D2531425243E6302005760B4 /* ArticleLinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2531424243E6302005760B4 /* ArticleLinkViewModel.swift */; };
 		D2531427243E632D005760B4 /* BFFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2531426243E632D005760B4 /* BFFViewModel.swift */; };
-		D2531429243E6355005760B4 /* BFFElementType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2531428243E6355005760B4 /* BFFElementType.swift */; };
-		D253142B243E651A005760B4 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = D253142A243E651A005760B4 /* SwiftPackageProductDependency */; };
+		D2531429243E6355005760B4 /* BFFAppElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2531428243E6355005760B4 /* BFFAppElement.swift */; };
+		D253142B243E651A005760B4 /* BFF in Frameworks */ = {isa = PBXBuildFile; productRef = D253142A243E651A005760B4 /* BFF */; };
 		D253142C243E656E005760B4 /* NuUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E0B221242BBED400E8F280 /* NuUI.framework */; };
 		D253142E243E6647005760B4 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D253142D243E6647005760B4 /* SettingsViewModel.swift */; };
 		D2531430243E68AE005760B4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D253142F243E68AE005760B4 /* README.md */; };
@@ -31,6 +31,9 @@
 		D253143C243E6AEE005760B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D253143B243E6AEE005760B4 /* ViewController.swift */; };
 		D2531441243E6AF0005760B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2531440243E6AF0005760B4 /* Assets.xcassets */; };
 		D2531444243E6AF0005760B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2531442243E6AF0005760B4 /* LaunchScreen.storyboard */; };
+		D253145C243E756D005760B4 /* DI in Frameworks */ = {isa = PBXBuildFile; productRef = D253145B243E756D005760B4 /* DI */; };
+		D253145F243E78E4005760B4 /* MoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D253145E243E78E4005760B4 /* MoreViewModel.swift */; };
+		D2531461243E7945005760B4 /* MoreNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2531460243E7945005760B4 /* MoreNode.swift */; };
 		D278EA20242BB5AF00C3978D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278EA1F242BB5AF00C3978D /* AppDelegate.swift */; };
 		D278EA22242BB5AF00C3978D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278EA21242BB5AF00C3978D /* SceneDelegate.swift */; };
 		D278EA29242BB5AF00C3978D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D278EA28242BB5AF00C3978D /* Assets.xcassets */; };
@@ -45,7 +48,7 @@
 		D2E0B248242BC1EF00E8F280 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B247242BC1EF00E8F280 /* MainRouter.swift */; };
 		D2E0B24A242BC1FA00E8F280 /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B249242BC1FA00E8F280 /* MainConfigurator.swift */; };
 		D2E0B24C242BC82200E8F280 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B24B242BC82200E8F280 /* Tracker.swift */; };
-		D2E0B258242BF64100E8F280 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = D2E0B257242BF64100E8F280 /* SwiftPackageProductDependency */; };
+		D2E0B258242BF64100E8F280 /* NUCommon in Frameworks */ = {isa = PBXBuildFile; productRef = D2E0B257242BF64100E8F280 /* NUCommon */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,7 +110,7 @@
 		D2531422243E6174005760B4 /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 		D2531424243E6302005760B4 /* ArticleLinkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleLinkViewModel.swift; sourceTree = "<group>"; };
 		D2531426243E632D005760B4 /* BFFViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFFViewModel.swift; sourceTree = "<group>"; };
-		D2531428243E6355005760B4 /* BFFElementType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFFElementType.swift; sourceTree = "<group>"; };
+		D2531428243E6355005760B4 /* BFFAppElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFFAppElement.swift; sourceTree = "<group>"; };
 		D253142D243E6647005760B4 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		D253142F243E68AE005760B4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D2531435243E6AEE005760B4 /* CardBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +120,8 @@
 		D2531440243E6AF0005760B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2531443243E6AF0005760B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2531445243E6AF0005760B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D253145E243E78E4005760B4 /* MoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewModel.swift; sourceTree = "<group>"; };
+		D2531460243E7945005760B4 /* MoreNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreNode.swift; sourceTree = "<group>"; };
 		D278EA1C242BB5AF00C3978D /* NewNUnl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewNUnl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D278EA1F242BB5AF00C3978D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D278EA21242BB5AF00C3978D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,7 +151,7 @@
 			files = (
 				D253142C243E656E005760B4 /* NuUI.framework in Frameworks */,
 				3AFBDED1CDFBB66A678607C2 /* Pods_NewNUnl_Mapper.framework in Frameworks */,
-				D253142B243E651A005760B4 /* BuildFile in Frameworks */,
+				D253142B243E651A005760B4 /* BFF in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,11 +167,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2E0B258242BF64100E8F280 /* BuildFile in Frameworks */,
-				D25313D3243E4AC9005760B4 /* BuildFile in Frameworks */,
+				D2E0B258242BF64100E8F280 /* NUCommon in Frameworks */,
+				D25313D3243E4AC9005760B4 /* BFF in Frameworks */,
 				30F22982FABE373E2FD16378 /* Pods_NewNUnl.framework in Frameworks */,
 				D253141D243E616B005760B4 /* Mapper.framework in Frameworks */,
 				D2E0B236242BBED400E8F280 /* NuUI.framework in Frameworks */,
+				D253145C243E756D005760B4 /* DI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,10 +228,8 @@
 				D2531418243E616B005760B4 /* Mapper.h */,
 				D2531419243E616B005760B4 /* Info.plist */,
 				D2531422243E6174005760B4 /* Mapper.swift */,
-				D2531428243E6355005760B4 /* BFFElementType.swift */,
-				D2531426243E632D005760B4 /* BFFViewModel.swift */,
-				D2531424243E6302005760B4 /* ArticleLinkViewModel.swift */,
-				D253142D243E6647005760B4 /* SettingsViewModel.swift */,
+				D2531428243E6355005760B4 /* BFFAppElement.swift */,
+				D253145D243E7797005760B4 /* ViewModels */,
 			);
 			path = Mapper;
 			sourceTree = "<group>";
@@ -241,6 +245,17 @@
 				D2531445243E6AF0005760B4 /* Info.plist */,
 			);
 			path = CardBoard;
+			sourceTree = "<group>";
+		};
+		D253145D243E7797005760B4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D2531426243E632D005760B4 /* BFFViewModel.swift */,
+				D2531424243E6302005760B4 /* ArticleLinkViewModel.swift */,
+				D253142D243E6647005760B4 /* SettingsViewModel.swift */,
+				D253145E243E78E4005760B4 /* MoreViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		D278EA13242BB5AF00C3978D = {
@@ -290,6 +305,7 @@
 				D25313D4243E4BF3005760B4 /* ActivityIndicatorNode.swift */,
 				D25313D6243E4D3B005760B4 /* CellNode.swift */,
 				D25313DC243E53B2005760B4 /* LinkNode.swift */,
+				D2531460243E7945005760B4 /* MoreNode.swift */,
 			);
 			path = NuUI;
 			sourceTree = "<group>";
@@ -361,7 +377,7 @@
 			);
 			name = Mapper;
 			packageProductDependencies = (
-				D253142A243E651A005760B4 /* SwiftPackageProductDependency */,
+				D253142A243E651A005760B4 /* BFF */,
 			);
 			productName = Mapper;
 			productReference = D2531416243E616B005760B4 /* Mapper.framework */;
@@ -405,8 +421,9 @@
 			);
 			name = NewNUnl;
 			packageProductDependencies = (
-				D2E0B257242BF64100E8F280 /* SwiftPackageProductDependency */,
-				D25313D2243E4AC9005760B4 /* SwiftPackageProductDependency */,
+				D2E0B257242BF64100E8F280 /* NUCommon */,
+				D25313D2243E4AC9005760B4 /* BFF */,
+				D253145B243E756D005760B4 /* DI */,
 			);
 			productName = NewNUnl;
 			productReference = D278EA1C242BB5AF00C3978D /* NewNUnl.app */;
@@ -646,7 +663,8 @@
 			files = (
 				D253142E243E6647005760B4 /* SettingsViewModel.swift in Sources */,
 				D2531423243E6174005760B4 /* Mapper.swift in Sources */,
-				D2531429243E6355005760B4 /* BFFElementType.swift in Sources */,
+				D2531429243E6355005760B4 /* BFFAppElement.swift in Sources */,
+				D253145F243E78E4005760B4 /* MoreViewModel.swift in Sources */,
 				D2531425243E6302005760B4 /* ArticleLinkViewModel.swift in Sources */,
 				D2531427243E632D005760B4 /* BFFViewModel.swift in Sources */,
 			);
@@ -683,6 +701,7 @@
 			files = (
 				D25313D5243E4BF3005760B4 /* ActivityIndicatorNode.swift in Sources */,
 				D25313DD243E53B2005760B4 /* LinkNode.swift in Sources */,
+				D2531461243E7945005760B4 /* MoreNode.swift in Sources */,
 				D2E0B23F242BBEEF00E8F280 /* SettingsNode.swift in Sources */,
 				D25313D7243E4D3B005760B4 /* CellNode.swift in Sources */,
 			);
@@ -1084,15 +1103,19 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D25313D2243E4AC9005760B4 /* SwiftPackageProductDependency */ = {
+		D25313D2243E4AC9005760B4 /* BFF */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = BFF;
 		};
-		D253142A243E651A005760B4 /* SwiftPackageProductDependency */ = {
+		D253142A243E651A005760B4 /* BFF */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = BFF;
 		};
-		D2E0B257242BF64100E8F280 /* SwiftPackageProductDependency */ = {
+		D253145B243E756D005760B4 /* DI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DI;
+		};
+		D2E0B257242BF64100E8F280 /* NUCommon */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = NUCommon;
 		};

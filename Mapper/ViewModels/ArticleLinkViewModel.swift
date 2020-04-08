@@ -26,7 +26,7 @@ public struct ArticleLinkViewModel: BFFViewModel {
         }
     }
 
-    public func elementType() -> BFFElementType {
-         BFFElementType.articleLink(URL(string: urlString)!)
+    public func elementType() -> BFFAppElement {
+         BFFAppElement.articleLink(URL(string: urlString)!)
     }
 }

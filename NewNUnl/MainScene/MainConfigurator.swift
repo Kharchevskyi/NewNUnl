@@ -9,6 +9,7 @@
 import UIKit
 import BFF
 import Mapper
+import DI
 
 //binding every vip component to implement outputs of previous component in VIP cycle
 extension MainViewController: MainPresenterOutput { }
@@ -25,14 +26,15 @@ struct MainConfigurator {
         let presenter = MainPresenter(
             output: viewController,
             router: router,
-            mapper: Mapper()
+            mapper: inject(type: Mapper.self, fallback: Mapper())
         )
 
         let interactor = MainInteractor(
-            tracker: Tracker(),
+            tracker: inject(type: Tracker.self, fallback: Tracker()),
             output: presenter,
-            bffElementFetcher: BFFFetcher()
+            bffElementFetcher: inject(type: BFFFetcher.self, fallback: BFFFetcher())
         )
+        
         viewController.output = interactor
 
         return viewController

@@ -61,7 +61,7 @@ extension MainViewController: ASTableDelegate, ASTableDataSource {
             return { nodeBlock }
         case .finishedLoading(let viewModels):
             let viewModel = viewModels[indexPath.row]
-            // TODO:
+            // TODO: 
 //            viewModel.onTap = { nodeType in
 //                self.output?.handle(action: .tapOnMenu(nodeType))
 //            }
@@ -82,12 +82,14 @@ extension MainViewController: ASTableDelegate, ASTableDataSource {
 }
 
 extension MainViewController {
-    private func handleElementAction(with elementType: BFFElementType) {
+    private func handleElementAction(with elementType: BFFAppElement) {
         switch elementType {
         case let .articleLink(url):
             output?.handle(action: .tapOnLink(url))
         case .settingsTap:
             output?.handle(action: .tapOnLogin)
+//        case .more:
+//            break
         }
     }
 }
@@ -105,8 +107,6 @@ extension MainViewController: MainViewControllerInput {
         }
     }
 }
-
-
 
 
 

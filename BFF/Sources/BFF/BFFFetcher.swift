@@ -14,7 +14,8 @@ public struct BFFFetcher {
         return [
             googleLink(),
             BFFElement.settings(.login),
-            BFFElement.settings(.bookmark)
+            BFFElement.settings(.bookmark),
+//            BFFElement.more(More(title: "More Title"))
         ]
     }
 

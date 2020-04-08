@@ -30,7 +30,7 @@ public struct SettingsViewModel: BFFViewModel {
         }
     }
 
-    public func elementType() -> BFFElementType {
-         BFFElementType.settingsTap
+    public func elementType() -> BFFAppElement {
+         BFFAppElement.settingsTap
     }
 }
