@@ -15,7 +15,7 @@ protocol MainInteractorInput {
 
 protocol MainInteractorOutput {
     func proceedTo(scene: MainPresenter.Scene)
-    func update(with updateType: MainPresenter.Update)
+    func update(with updateType: MainPresenter.UpdateEvent)
 }
 
 struct MainInteractor: MainInteractorInput {
@@ -41,9 +41,9 @@ struct MainInteractor: MainInteractorInput {
             fetchBlocks()
 
             // send event to presenter to update state of a view. Interactor doesn't know anything about view
-            output.update(with: MainPresenter.Update.startLoading)
+            output.update(with: MainPresenter.UpdateEvent.startLoading)
 
-            // track smth (business logic is in iteractor)
+            // track smth (business logic is in interactor)
             track()
             
             case .scroll(let percent):

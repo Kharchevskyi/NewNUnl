@@ -14,7 +14,7 @@ import BFF
 import Mapper 
 
 protocol MainPresenterInput {
-    func update(with updateType: MainPresenter.Update)
+    func update(with updateType: MainPresenter.UpdateEvent)
     func proceedTo(scene: MainPresenter.Scene)
 }
 
@@ -23,7 +23,7 @@ protocol MainPresenterOutput {
 }
 
 struct MainPresenter {
-    enum Update {
+    enum UpdateEvent {
         case startLoading
         case loadedElements([BFFElement])
     }
@@ -45,7 +45,7 @@ struct MainPresenter {
 }
 
 extension MainPresenter: MainPresenterInput {
-    func update(with updateType: Update) {
+    func update(with updateType: UpdateEvent) {
         DispatchQueue.main.async {
             switch updateType {
             case .loadedElements(let elements):

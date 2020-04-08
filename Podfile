@@ -15,4 +15,8 @@ target 'NewNUnl' do
     pod 'Texture'
   end
 
+  target 'CardBoard' do
+    pod 'Texture'
+  end
+
 end

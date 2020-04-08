@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1706EC57E3DBB5FC7C012627 /* Pods_NewNUnl_CardBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 685D61120C8B3F3EDBE65EEE /* Pods_NewNUnl_CardBoard.framework */; };
 		30F22982FABE373E2FD16378 /* Pods_NewNUnl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9AEC10F6E73F321EA486E5A /* Pods_NewNUnl.framework */; };
 		3AFBDED1CDFBB66A678607C2 /* Pods_NewNUnl_Mapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F464DBD5159C16150E4A713F /* Pods_NewNUnl_Mapper.framework */; };
 		6BD76585676B503ABA45C0C5 /* Pods_NewNUnl_NuUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2AD9754A796B449E498D467 /* Pods_NewNUnl_NuUI.framework */; };
-		D25313D3243E4AC9005760B4 /* BFF in Frameworks */ = {isa = PBXBuildFile; productRef = D25313D2243E4AC9005760B4 /* BFF */; };
+		D25313D3243E4AC9005760B4 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = D25313D2243E4AC9005760B4 /* SwiftPackageProductDependency */; };
 		D25313D5243E4BF3005760B4 /* ActivityIndicatorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25313D4243E4BF3005760B4 /* ActivityIndicatorNode.swift */; };
 		D25313D7243E4D3B005760B4 /* CellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25313D6243E4D3B005760B4 /* CellNode.swift */; };
 		D25313DD243E53B2005760B4 /* LinkNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25313DC243E53B2005760B4 /* LinkNode.swift */; };
@@ -21,9 +22,15 @@
 		D2531425243E6302005760B4 /* ArticleLinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2531424243E6302005760B4 /* ArticleLinkViewModel.swift */; };
 		D2531427243E632D005760B4 /* BFFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2531426243E632D005760B4 /* BFFViewModel.swift */; };
 		D2531429243E6355005760B4 /* BFFElementType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2531428243E6355005760B4 /* BFFElementType.swift */; };
-		D253142B243E651A005760B4 /* BFF in Frameworks */ = {isa = PBXBuildFile; productRef = D253142A243E651A005760B4 /* BFF */; };
+		D253142B243E651A005760B4 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = D253142A243E651A005760B4 /* SwiftPackageProductDependency */; };
 		D253142C243E656E005760B4 /* NuUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E0B221242BBED400E8F280 /* NuUI.framework */; };
 		D253142E243E6647005760B4 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D253142D243E6647005760B4 /* SettingsViewModel.swift */; };
+		D2531430243E68AE005760B4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D253142F243E68AE005760B4 /* README.md */; };
+		D2531438243E6AEE005760B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2531437243E6AEE005760B4 /* AppDelegate.swift */; };
+		D253143A243E6AEE005760B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2531439243E6AEE005760B4 /* SceneDelegate.swift */; };
+		D253143C243E6AEE005760B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D253143B243E6AEE005760B4 /* ViewController.swift */; };
+		D2531441243E6AF0005760B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2531440243E6AF0005760B4 /* Assets.xcassets */; };
+		D2531444243E6AF0005760B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2531442243E6AF0005760B4 /* LaunchScreen.storyboard */; };
 		D278EA20242BB5AF00C3978D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278EA1F242BB5AF00C3978D /* AppDelegate.swift */; };
 		D278EA22242BB5AF00C3978D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278EA21242BB5AF00C3978D /* SceneDelegate.swift */; };
 		D278EA29242BB5AF00C3978D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D278EA28242BB5AF00C3978D /* Assets.xcassets */; };
@@ -38,7 +45,7 @@
 		D2E0B248242BC1EF00E8F280 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B247242BC1EF00E8F280 /* MainRouter.swift */; };
 		D2E0B24A242BC1FA00E8F280 /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B249242BC1FA00E8F280 /* MainConfigurator.swift */; };
 		D2E0B24C242BC82200E8F280 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B24B242BC82200E8F280 /* Tracker.swift */; };
-		D2E0B258242BF64100E8F280 /* NUCommon in Frameworks */ = {isa = PBXBuildFile; productRef = D2E0B257242BF64100E8F280 /* NUCommon */; };
+		D2E0B258242BF64100E8F280 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = D2E0B257242BF64100E8F280 /* SwiftPackageProductDependency */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,8 +84,11 @@
 		0CB496D7643DC9030BF2A89A /* Pods_NewNUnl_NewUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewNUnl_NewUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A81073B8321F8546A27E6E3 /* Pods-NewNUnl-NuUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNUnl-NuUI.debug.xcconfig"; path = "Target Support Files/Pods-NewNUnl-NuUI/Pods-NewNUnl-NuUI.debug.xcconfig"; sourceTree = "<group>"; };
 		48AC785A6EC30631C7F7E975 /* Pods-NewNUnl-Mapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNUnl-Mapper.release.xcconfig"; path = "Target Support Files/Pods-NewNUnl-Mapper/Pods-NewNUnl-Mapper.release.xcconfig"; sourceTree = "<group>"; };
+		4BEF1281214121F642BBAC33 /* Pods-NewNUnl-CardBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNUnl-CardBoard.debug.xcconfig"; path = "Target Support Files/Pods-NewNUnl-CardBoard/Pods-NewNUnl-CardBoard.debug.xcconfig"; sourceTree = "<group>"; };
 		553C4997A45299B96FC9E1D8 /* Pods-NewNUnl-NewNUnlUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNUnl-NewNUnlUITests.debug.xcconfig"; path = "Target Support Files/Pods-NewNUnl-NewNUnlUITests/Pods-NewNUnl-NewNUnlUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5F1E4598D68B3B359FAE79EC /* Pods-NewNUnlTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNUnlTests.release.xcconfig"; path = "Target Support Files/Pods-NewNUnlTests/Pods-NewNUnlTests.release.xcconfig"; sourceTree = "<group>"; };
+		5FE3C7C026250F1A0CEFBF4D /* Pods-NewNUnl-CardBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNUnl-CardBoard.release.xcconfig"; path = "Target Support Files/Pods-NewNUnl-CardBoard/Pods-NewNUnl-CardBoard.release.xcconfig"; sourceTree = "<group>"; };
+		685D61120C8B3F3EDBE65EEE /* Pods_NewNUnl_CardBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewNUnl_CardBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69ABA4C3925C3976CD800CB0 /* Pods_NewNUnl_NewNUnlUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewNUnl_NewNUnlUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A198CDD9DED7E9662B8FD28 /* Pods-NewNUnl-Mapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNUnl-Mapper.debug.xcconfig"; path = "Target Support Files/Pods-NewNUnl-Mapper/Pods-NewNUnl-Mapper.debug.xcconfig"; sourceTree = "<group>"; };
 		9D10A4AF30B6100AC61571B6 /* Pods-NewNUnl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNUnl.release.xcconfig"; path = "Target Support Files/Pods-NewNUnl/Pods-NewNUnl.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +109,14 @@
 		D2531426243E632D005760B4 /* BFFViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFFViewModel.swift; sourceTree = "<group>"; };
 		D2531428243E6355005760B4 /* BFFElementType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFFElementType.swift; sourceTree = "<group>"; };
 		D253142D243E6647005760B4 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		D253142F243E68AE005760B4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D2531435243E6AEE005760B4 /* CardBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2531437243E6AEE005760B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2531439243E6AEE005760B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D253143B243E6AEE005760B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D2531440243E6AF0005760B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2531443243E6AF0005760B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2531445243E6AF0005760B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D278EA1C242BB5AF00C3978D /* NewNUnl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewNUnl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D278EA1F242BB5AF00C3978D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D278EA21242BB5AF00C3978D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,7 +146,15 @@
 			files = (
 				D253142C243E656E005760B4 /* NuUI.framework in Frameworks */,
 				3AFBDED1CDFBB66A678607C2 /* Pods_NewNUnl_Mapper.framework in Frameworks */,
-				D253142B243E651A005760B4 /* BFF in Frameworks */,
+				D253142B243E651A005760B4 /* BuildFile in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2531432243E6AEE005760B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1706EC57E3DBB5FC7C012627 /* Pods_NewNUnl_CardBoard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +162,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2E0B258242BF64100E8F280 /* NUCommon in Frameworks */,
-				D25313D3243E4AC9005760B4 /* BFF in Frameworks */,
+				D2E0B258242BF64100E8F280 /* BuildFile in Frameworks */,
+				D25313D3243E4AC9005760B4 /* BuildFile in Frameworks */,
 				30F22982FABE373E2FD16378 /* Pods_NewNUnl.framework in Frameworks */,
 				D253141D243E616B005760B4 /* Mapper.framework in Frameworks */,
 				D2E0B236242BBED400E8F280 /* NuUI.framework in Frameworks */,
@@ -164,6 +190,7 @@
 				0CB496D7643DC9030BF2A89A /* Pods_NewNUnl_NewUI.framework */,
 				C2AD9754A796B449E498D467 /* Pods_NewNUnl_NuUI.framework */,
 				F464DBD5159C16150E4A713F /* Pods_NewNUnl_Mapper.framework */,
+				685D61120C8B3F3EDBE65EEE /* Pods_NewNUnl_CardBoard.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -183,6 +210,8 @@
 				D1670084030B93F628C9EF4C /* Pods-NewNUnl-NuUI.release.xcconfig */,
 				8A198CDD9DED7E9662B8FD28 /* Pods-NewNUnl-Mapper.debug.xcconfig */,
 				48AC785A6EC30631C7F7E975 /* Pods-NewNUnl-Mapper.release.xcconfig */,
+				4BEF1281214121F642BBAC33 /* Pods-NewNUnl-CardBoard.debug.xcconfig */,
+				5FE3C7C026250F1A0CEFBF4D /* Pods-NewNUnl-CardBoard.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -201,12 +230,27 @@
 			path = Mapper;
 			sourceTree = "<group>";
 		};
+		D2531436243E6AEE005760B4 /* CardBoard */ = {
+			isa = PBXGroup;
+			children = (
+				D2531437243E6AEE005760B4 /* AppDelegate.swift */,
+				D2531439243E6AEE005760B4 /* SceneDelegate.swift */,
+				D253143B243E6AEE005760B4 /* ViewController.swift */,
+				D2531440243E6AF0005760B4 /* Assets.xcassets */,
+				D2531442243E6AF0005760B4 /* LaunchScreen.storyboard */,
+				D2531445243E6AF0005760B4 /* Info.plist */,
+			);
+			path = CardBoard;
+			sourceTree = "<group>";
+		};
 		D278EA13242BB5AF00C3978D = {
 			isa = PBXGroup;
 			children = (
+				D253142F243E68AE005760B4 /* README.md */,
 				D278EA1E242BB5AF00C3978D /* NewNUnl */,
 				D2E0B222242BBED400E8F280 /* NuUI */,
 				D2531417243E616B005760B4 /* Mapper */,
+				D2531436243E6AEE005760B4 /* CardBoard */,
 				D278EA1D242BB5AF00C3978D /* Products */,
 				6CB5D306E22D28B0DC69E631 /* Pods */,
 				6A1E80A89CAB5CEE2845D62F /* Frameworks */,
@@ -219,6 +263,7 @@
 				D278EA1C242BB5AF00C3978D /* NewNUnl.app */,
 				D2E0B221242BBED400E8F280 /* NuUI.framework */,
 				D2531416243E616B005760B4 /* Mapper.framework */,
+				D2531435243E6AEE005760B4 /* CardBoard.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -316,11 +361,30 @@
 			);
 			name = Mapper;
 			packageProductDependencies = (
-				D253142A243E651A005760B4 /* BFF */,
+				D253142A243E651A005760B4 /* SwiftPackageProductDependency */,
 			);
 			productName = Mapper;
 			productReference = D2531416243E616B005760B4 /* Mapper.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		D2531434243E6AEE005760B4 /* CardBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2531451243E6AF0005760B4 /* Build configuration list for PBXNativeTarget "CardBoard" */;
+			buildPhases = (
+				7051F1972235AA0D113639D4 /* [CP] Check Pods Manifest.lock */,
+				D2531431243E6AEE005760B4 /* Sources */,
+				D2531432243E6AEE005760B4 /* Frameworks */,
+				D2531433243E6AEE005760B4 /* Resources */,
+				5F88E005C68990F66B072278 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CardBoard;
+			productName = CardBoard;
+			productReference = D2531435243E6AEE005760B4 /* CardBoard.app */;
+			productType = "com.apple.product-type.application";
 		};
 		D278EA1B242BB5AF00C3978D /* NewNUnl */ = {
 			isa = PBXNativeTarget;
@@ -341,8 +405,8 @@
 			);
 			name = NewNUnl;
 			packageProductDependencies = (
-				D2E0B257242BF64100E8F280 /* NUCommon */,
-				D25313D2243E4AC9005760B4 /* BFF */,
+				D2E0B257242BF64100E8F280 /* SwiftPackageProductDependency */,
+				D25313D2243E4AC9005760B4 /* SwiftPackageProductDependency */,
 			);
 			productName = NewNUnl;
 			productReference = D278EA1C242BB5AF00C3978D /* NewNUnl.app */;
@@ -381,6 +445,9 @@
 						CreatedOnToolsVersion = 11.3.1;
 						LastSwiftMigration = 1130;
 					};
+					D2531434243E6AEE005760B4 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 					D278EA1B242BB5AF00C3978D = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -406,6 +473,7 @@
 				D278EA1B242BB5AF00C3978D /* NewNUnl */,
 				D2E0B220242BBED400E8F280 /* NuUI */,
 				D2531415243E616B005760B4 /* Mapper */,
+				D2531434243E6AEE005760B4 /* CardBoard */,
 			);
 		};
 /* End PBXProject section */
@@ -418,10 +486,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2531433243E6AEE005760B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2531444243E6AF0005760B4 /* LaunchScreen.storyboard in Resources */,
+				D2531441243E6AF0005760B4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D278EA1A242BB5AF00C3978D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2531430243E68AE005760B4 /* README.md in Resources */,
 				D278EA2C242BB5AF00C3978D /* LaunchScreen.storyboard in Resources */,
 				D278EA29242BB5AF00C3978D /* Assets.xcassets in Resources */,
 			);
@@ -459,6 +537,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5F88E005C68990F66B072278 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewNUnl-CardBoard/Pods-NewNUnl-CardBoard-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewNUnl-CardBoard/Pods-NewNUnl-CardBoard-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewNUnl-CardBoard/Pods-NewNUnl-CardBoard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6DEE7AA51285B4121DCFFA4C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -474,6 +569,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewNUnl/Pods-NewNUnl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7051F1972235AA0D113639D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NewNUnl-CardBoard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A4569BD2C9039820E21FC695 /* [CP] Check Pods Manifest.lock */ = {
@@ -535,6 +652,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2531431243E6AEE005760B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D253143C243E6AEE005760B4 /* ViewController.swift in Sources */,
+				D2531438243E6AEE005760B4 /* AppDelegate.swift in Sources */,
+				D253143A243E6AEE005760B4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D278EA18242BB5AF00C3978D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -577,6 +704,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		D2531442243E6AF0005760B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2531443243E6AF0005760B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		D278EA2A242BB5AF00C3978D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -644,6 +779,44 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D2531452243E6AF0005760B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BEF1281214121F642BBAC33 /* Pods-NewNUnl-CardBoard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BS64L7F579;
+				INFOPLIST_FILE = CardBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kharchevskyi.CardBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2531453243E6AF0005760B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FE3C7C026250F1A0CEFBF4D /* Pods-NewNUnl-CardBoard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BS64L7F579;
+				INFOPLIST_FILE = CardBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kharchevskyi.CardBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -872,6 +1045,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		D2531451243E6AF0005760B4 /* Build configuration list for PBXNativeTarget "CardBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2531452243E6AF0005760B4 /* Debug */,
+				D2531453243E6AF0005760B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D278EA17242BB5AF00C3978D /* Build configuration list for PBXProject "NewNUnl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -902,15 +1084,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D25313D2243E4AC9005760B4 /* BFF */ = {
+		D25313D2243E4AC9005760B4 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = BFF;
 		};
-		D253142A243E651A005760B4 /* BFF */ = {
+		D253142A243E651A005760B4 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = BFF;
 		};
-		D2E0B257242BF64100E8F280 /* NUCommon */ = {
+		D2E0B257242BF64100E8F280 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = NUCommon;
 		};
