@@ -50,6 +50,8 @@ struct MainInteractor: MainInteractorInput {
                 tracker.trackScroll(with: percent)
             case .tapOnLink(let url):
                 output.proceedTo(scene: .webView(url))
+        case .tapOnLogin:
+            output.proceedTo(scene: .loginScene)
         }
     }
 }

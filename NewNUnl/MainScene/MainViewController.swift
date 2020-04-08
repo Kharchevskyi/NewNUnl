@@ -86,6 +86,8 @@ extension MainViewController {
         switch elementType {
         case let .articleLink(url):
             output?.handle(action: .tapOnLink(url))
+        case .settingsTap:
+            output?.handle(action: .tapOnLogin)
         }
     }
 }
@@ -114,5 +116,6 @@ extension MainViewController {
         case setup
         case tapOnLink(_ url: URL)
         case scroll(_ percent: CGFloat)
+        case tapOnLogin
     }
 }

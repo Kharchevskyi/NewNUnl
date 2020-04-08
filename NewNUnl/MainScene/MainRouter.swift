@@ -24,7 +24,7 @@ struct MainRouter: MainRouting {
         switch scene {
         case .webView(let url):
             UIApplication.shared.open(url)
-        case .detailScene:
+        case .loginScene:
             assertionFailure("Not implemented yet")
         }
     }

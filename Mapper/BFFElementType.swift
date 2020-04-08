@@ -11,4 +11,5 @@ import Foundation
 /// All elements type which can be rendered in application
 public enum BFFElementType {
     case articleLink(URL)
+    case settingsTap
 }

@@ -13,7 +13,8 @@ public struct BFFFetcher {
     public func fetchAll() -> [BFFElement] {
         return [
             googleLink(),
-//            BFFElement.settings(.login)
+            BFFElement.settings(.login),
+            BFFElement.settings(.bookmark)
         ]
     }
 

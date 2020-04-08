@@ -21,6 +21,13 @@ public struct Mapper {
         switch bffElement {
         case .articleLink(let bffArticleLink):
             return ArticleLinkViewModel(urlString: bffArticleLink.urlString)
+        case .settings(let bffSettings):
+            switch bffSettings {
+            case .bookmark:
+                return SettingsViewModel(title: bffSettings.rawValue)
+            case .login:
+                return SettingsViewModel(title: bffSettings.rawValue)
+            }
         default:
             assertionFailure("This bffElement element \(bffElement) is not supported")
             return nil

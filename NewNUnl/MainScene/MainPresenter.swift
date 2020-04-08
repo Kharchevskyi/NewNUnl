@@ -29,7 +29,7 @@ struct MainPresenter {
     }
 
     enum Scene {
-        case detailScene
+        case loginScene
         case webView(URL)
     }
 
@@ -62,7 +62,7 @@ extension MainPresenter: MainPresenterInput {
 
     func proceedTo(scene: MainPresenter.Scene) {
         switch scene {
-        case .detailScene:
+        case .loginScene:
             print("show scene")
         case .webView(let url):
             router.proceedTo(scene: .webView(url))
