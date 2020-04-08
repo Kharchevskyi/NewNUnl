@@ -9,7 +9,7 @@
 import Foundation
 import AsyncDisplayKit
 
-public final class SettingNode: ASCellNode {
+public final class SettingNode: CellNode {
     public struct Input {
         public let image: UIImage?
         public let title: NSAttributedString
@@ -45,7 +45,6 @@ public final class SettingNode: ASCellNode {
         self.input = input
         super.init()
 
-        automaticallyManagesSubnodes = true
         [imageNode, titleNode, subtitleNode].forEach {
             $0.addTarget(self, action: #selector(onTapAction), forControlEvents: .touchUpInside)
         }

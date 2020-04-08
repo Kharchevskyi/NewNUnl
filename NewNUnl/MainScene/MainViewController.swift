@@ -14,20 +14,14 @@ protocol MainViewControllerInput {
 }
 
 protocol MainViewControllerOutput {
-    func setup()
     func handle(action: MainViewController.Action)
 }
 
 final class MainViewController: ASViewController<ASTableNode> {
     enum State {
         case idle
-        case loading
-        case finishedLoading([ViewModel])
-    }
-
-    enum Action {
-        case tapOnMenu(_ type: BFFElementType)
-        case scroll(_ percent: CGFloat)
+        case loading(ASCellNode)
+        case finishedLoading([BFFViewModel])
     }
 
     private var state: State = .idle
@@ -46,38 +40,51 @@ final class MainViewController: ASViewController<ASTableNode> {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        output?.setup()
+        output?.handle(action: .setup)
     }
 }
 
 extension MainViewController: ASTableDelegate, ASTableDataSource {
     func tableNode(_ tableNode: ASTableNode, numberOfRowsInSection section: Int) -> Int {
         switch state {
-        case .idle, .loading: return 0
+        case .idle, .loading: return 1
         case .finishedLoading(let models): return models.count
         }
     }
 
     func tableNode(_ tableNode: ASTableNode, nodeBlockForRowAt indexPath: IndexPath) -> ASCellNodeBlock {
         switch state {
-        case .idle, .loading: return { ASCellNode() }
-        case .finishedLoading(let models):
-            let viewModel = models[indexPath.row]
+        case .idle:
+            return { ASCellNode() }
+        case let .loading(nodeBlock):
+            return { nodeBlock }
+        case .finishedLoading(let viewModels):
+            let viewModel = viewModels[indexPath.row]
             // TODO:
 //            viewModel.onTap = { nodeType in
 //                self.output?.handle(action: .tapOnMenu(nodeType))
 //            }
-            return viewModel.node
+            return viewModel.node()
         }
     }
 
     func tableNode(_ tableNode: ASTableNode, didSelectRowAt indexPath: IndexPath) {
         switch state {
         case .finishedLoading(let models):
-            let type = models[indexPath.row].elementType
-            output?.handle(action: .tapOnMenu(type))
+            let viewModel = models[indexPath.row]
+            let elementType = viewModel.elementType()
+            handleElementAction(with: elementType)
         default:
             break
+        }
+    }
+}
+
+extension MainViewController {
+    private func handleElementAction(with elementType: BFFElementType) {
+        switch elementType {
+        case let .articleLink(url):
+            output?.handle(action: .tapOnLink(url))
         }
     }
 }
@@ -93,5 +100,18 @@ extension MainViewController: MainViewControllerInput {
         case .finishedLoading:
             node.reloadData()
         }
+    }
+}
+
+
+
+
+
+extension MainViewController {
+    /// all actions that view controller can perform
+    enum Action {
+        case setup
+        case tapOnLink(_ url: URL)
+        case scroll(_ percent: CGFloat)
     }
 }

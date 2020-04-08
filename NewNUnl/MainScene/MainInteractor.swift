@@ -7,9 +7,9 @@
 //
 
 import Foundation
+import BFF
 
 protocol MainInteractorInput {
-    func setup()
     func handle(action: MainViewController.Action)
 }
 
@@ -21,30 +21,48 @@ protocol MainInteractorOutput {
 struct MainInteractor: MainInteractorInput {
     private let tracker: TrackerType
     private let output: MainInteractorOutput
+    private let bffElementFetcher: BFFFetcher
 
     init(
         tracker: TrackerType,
-        output: MainInteractorOutput
+        output: MainInteractorOutput,
+        bffElementFetcher: BFFFetcher
     ) {
         self.tracker = tracker
         self.output = output
+        self.bffElementFetcher = bffElementFetcher
     }
 
-    func setup() {
-        // perform some setup of buisnes logic
-        // fetch something or subscribe for notification
-        DispatchQueue.global().asyncAfter(deadline: .now() + 2) {
-            let allMenuItems = BFFElementType.allCases.map(BFFElement.init)
-            self.output.update(with: .loadedSettings(allMenuItems))
-        }
-    }
 
     func handle(action: MainViewController.Action) {
         switch action {
-        case .tapOnMenu:
-            output.proceedTo(scene: .detailScene)
-        case .scroll(let percent):
-            tracker.trackScroll(with: percent)
+        case .setup:
+            // perform some setup, for example fetch something
+            fetchBlocks()
+
+            // send event to presenter to update state of a view. Interactor doesn't know anything about view
+            output.update(with: MainPresenter.Update.startLoading)
+
+            // track smth (business logic is in iteractor)
+            track()
+            
+            case .scroll(let percent):
+                tracker.trackScroll(with: percent)
+            case .tapOnLink(let url):
+                output.proceedTo(scene: .webView(url))
         }
+    }
+}
+
+extension MainInteractor {
+    private func fetchBlocks() {
+        DispatchQueue.global().asyncAfter(deadline: .now() + 2) {
+            let allBlocks = self.bffElementFetcher.fetchAll()
+            self.output.update(with: .loadedElements(allBlocks))
+        }
+    }
+
+    private func track() {
+        tracker.track()
     }
 }

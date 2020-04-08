@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:BFF">
+   </FileRef>
+   <FileRef
       location = "group:NUCommon">
    </FileRef>
    <FileRef

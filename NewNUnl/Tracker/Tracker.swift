@@ -10,10 +10,15 @@ import UIKit
 
 protocol TrackerType {
     func trackScroll(with percent: CGFloat)
+    func track()
 }
 
 struct Tracker: TrackerType {
     func trackScroll(with percent: CGFloat) {
         print("Track scroll \(percent)")
+    }
+
+    func track() {
+        print("Track")
     }
 }

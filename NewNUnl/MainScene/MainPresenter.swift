@@ -10,6 +10,8 @@ import Foundation
 import NuUI
 import UIKit
 import NUCommon
+import BFF
+//import Mapper
 
 protocol MainPresenterInput {
     func update(with updateType: MainPresenter.Update)
@@ -22,19 +24,23 @@ protocol MainPresenterOutput {
 
 struct MainPresenter {
     enum Update {
-        case loadedSettings([BFFElement])
+        case startLoading
+        case loadedElements([BFFElement])
     }
 
     enum Scene {
         case detailScene
+        case webView(URL)
     }
 
     private let output: MainPresenterOutput
     private let router: MainRouting
+//    private let mapper: Mapper
 
     init(output: MainPresenterOutput, router: MainRouting) {
         self.output = output
         self.router = router
+//        self.mapper = mapper
     }
 }
 
@@ -42,43 +48,26 @@ extension MainPresenter: MainPresenterInput {
     func update(with updateType: Update) {
         DispatchQueue.main.async {
             switch updateType {
-            case .loadedSettings(let settings):
-                let viewModels = settings.map(ViewModel.init)
-                self.output.update(with: .finishedLoading(viewModels))
+            case .loadedElements(let elements):
+                // map all business models from bff to view representabke
+//                let viewModels = elements.compactMap(self.mapBFFElementToViewRepresentable)
+//                self.output.update(with: .finishedLoading(viewModels))
+                break
+            case .startLoading:
+                let node = ActivityIndicatorNode(input: ActivityIndicatorNode.Input(color: .red, nodeHeight: UIScreen.main.bounds.height))
+                self.output.update(with: .loading(node))
             }
         }
     }
-    
+
     func proceedTo(scene: MainPresenter.Scene) {
         switch scene {
         case .detailScene:
             print("show scene")
+        case .webView(let url):
+            router.proceedTo(scene: .webView(url))
         }
     }
-}
+} 
 
-extension ViewModel {
-    init(model: BFFElement) {
-        self.elementType = model.mainType
 
-        var input = SettingNode.Input(
-            image: .actions,
-            title: model.mainType.title.attributed(with: 35, color: .red),
-            subTitle: model.mainType.subtitle.attributed(with: 35, color: .blue)
-        )
-
-        self.node = input.node
-
-        self.onTap = nil
-    }
-}
-
-extension BFFElementType {
-    var title: String {
-        rawValue
-    }
-
-    var subtitle: String {
-        "Subtitle for \(rawValue)"
-    }
-}

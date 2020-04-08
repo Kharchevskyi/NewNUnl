@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import BFF
 
 //binding every vip component to implement outputs of previous component in VIP cycle
 extension MainViewController: MainPresenterOutput { }
@@ -27,7 +28,8 @@ struct MainConfigurator {
 
         let interactor = MainInteractor(
             tracker: Tracker(),
-            output: presenter
+            output: presenter,
+            bffElementFetcher: BFFFetcher()
         )
         viewController.output = interactor
 
