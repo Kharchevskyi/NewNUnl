@@ -38,10 +38,6 @@
 
 
 
-
-
-
-
 ### Problems described in current app
 
 1) Modularisation 
