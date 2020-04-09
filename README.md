@@ -49,18 +49,17 @@ Application - VIP scene (generic scene)
 
 ## Problems described in current app
 
-1) Modularisation - Every function part is a testable separate target which can be easily move to another workspace or project. 
-2) CellModelFactory - Solved with type safe enum cases.
-3) Inheritance - No inheritance. No UI inheritance. 
-    All Ui elements is dummy element with just Input (information what needed to render a view). Made with layers.
-4) Composability - All modules can be easily tested.  Or there is even a separate App where we can just inspect how UI element looks like (CardBoard app)
-5) Logic handling  - All logic is handled inside interactor. Even if we want to inject some dependecy we will know where to find a place where logic is handling
-6) Routing - Routing events received unidirectional from presenter. Or we can have some GlobalRouter who will handle not only viewcontroller event, like push notifications taps.
-7) Different architectural approaches - One VIP architecture. Reactive code can be presented in interactor and not distributed over the place
-8) Magic UI - all UI elements is in separate module
-9) Magic Strings - everything is type safe. Try to uncomment BFFFetcher -> fetchAll(). Everything is coupled using enums which ensures that enumeration cases aren’t accidentally omitted. You will receive just one assertion failure in Mapper, not even in an app. So our app will not crash if new element will be pushed from BFF.  
-10) Clear way how to add new content. Try step 9
-11) Easy onboarding
+* **Modularisation** - Every function part is a testable separate target which can be easily move to another workspace or project. (Mapper, BFF, Tracker)
+* **CellModelFactory** - Solved with type safe enum cases. (Try to add new bff element). Compiler will do everything for you. Easy onboarding process.
+* **Inheritance** - No inheritance. No UI inheritance. Ui built in a separate target. All Ui elements is dummy element with just Input (information what needed to render a view). Made with layers.
+* **Composability** - All modules can be easily tested.  Or there is even a separate App where we can just inspect how UI element looks like (CardBoard app)
+* **Logic** handling  - All logic is handled inside interactor. Even if we want to inject some dependecy we will know where to find a place where logic is handling. 
+* **Routing** - Routing events received unidirectional from presenter. Or we can have some GlobalRouter who will handle not only viewcontroller event, like push notifications taps.
+* **Different** architectural approaches - One VIP architecture. Reactive code can be presented in interactor and not distributed over the place. For example receive event of viewControllerDidAppear combine it with BannerPool ready event and update presenter with new add.
+* **Magic UI + UI** - all UI elements is in separate module. Can be easily shown in app. See CardBoard app
+* **Magic Strings** - everything is type safe. Try to uncomment BFFFetcher -> fetchAll(). Everything is coupled using enums which ensures that enumeration cases aren’t accidentally omitted. You will receive just one assertion failure in Mapper, not even in an app. So our app will not crash if new element will be pushed from BFF.  
+* **Clear** way how to add new content. Try step 9
+* **Easy** onboarding. 
 
 
 ## TODO
