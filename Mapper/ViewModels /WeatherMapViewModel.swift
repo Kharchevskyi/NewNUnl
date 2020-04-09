@@ -31,6 +31,7 @@ public struct WeatherMapViewModel: BFFViewModel {
                 imageUrl: self.imageUrl,
                 buttonText: self.buttonTitle
             )
+            // Patrick: 7) Node for you model
             return WeatherImageCellNode(input: input)
         }
     }

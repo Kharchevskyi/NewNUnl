@@ -75,6 +75,8 @@ extension ViewController: ASTableDelegate, ASTableDataSource {
                     )
                 )
             }
+            // Patrick: 7) You can Run this one screen app to see how it looks like.
+            // Don't need to implement it even in NUnl app at all.
         case .weatherWithButton:
             return {
                 WeatherImageCellNode(

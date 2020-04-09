@@ -17,8 +17,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
 
         let main = MainConfigurator.scene()
-        let settings = MainConfigurator.scene(sceneType: .settings)
+        main.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
 
+        let settings = MainConfigurator.scene(sceneType: .settings)
+        settings.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 1)
+        
         let tabBarController = UITabBarController()
 
         tabBarController.viewControllers = [main, settings]

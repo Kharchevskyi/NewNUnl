@@ -24,9 +24,6 @@ protocol MainPresenterOutput {
 }
 
 struct MainPresenter {
-    enum Constants {
-        static let weatherButtonTitle = NSAttributedString(string: "Some new title that PO decided even before implementing it on bff")
-    }
     enum UpdateEvent {
         case startLoading
         case loadedElements([BFFElement])
@@ -55,9 +52,6 @@ extension MainPresenter: MainPresenterInput {
             case .loadedElements(let elements):
                 // map all business models from bff to view representable
                 let viewModels = self.mapper.map(elements)
-                    // Change some view presentation logic (title, font, colors)
-                    .mapWithLastWeather(title: Constants.weatherButtonTitle)
-
                 self.output.update(with: .finishedLoading(viewModels))
                 break
             case .startLoading:

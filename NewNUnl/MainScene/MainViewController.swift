@@ -43,7 +43,7 @@ final class MainViewController: ASViewController<ASTableNode> {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        output?.handle(action: .setup)
+        output?.handle(action: .setup(sceneType ?? .all))
     }
 }
 
@@ -117,7 +117,7 @@ extension MainViewController: MainViewControllerInput {
 extension MainViewController {
     /// all actions that view controller can perform
     enum Action {
-        case setup
+        case setup(_ sceneType: SceneType)
         case tapOnLink(_ url: URL)
         case scroll(_ percent: CGFloat)
         case tapOnLogin

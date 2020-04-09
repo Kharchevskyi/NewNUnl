@@ -28,12 +28,13 @@ public struct Mapper {
             case .login:
                 return SettingsViewModel(title: bffSettings.rawValue)
             }
+            // Patrick: 6) Map your bff model into view representable
         case .weather(let weatherMap):
             return WeatherMapViewModel(weatherMap)
-                
 //        case .more(let moreModel):
 //            return MoreViewModel(title: moreModel.title)
         default:
+            // Patrick: 5) assertion here because we didn't know about new element. (nil in production code)
             assertionFailure("This bffElement element \(bffElement) is not supported")
             return nil
         }

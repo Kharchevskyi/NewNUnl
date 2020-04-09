@@ -19,11 +19,13 @@ public struct BFFFetcher: BFFFetcherType {
     public func fetchAll() -> [BFFElement] {
         [
             googleLink(),
+            // Patrick: 4) Return this element from backend. 
             BFFElement.weather(WeatherMap(moreTitle: nil)),
             BFFElement.settings(.login),
             BFFElement.settings(.bookmark),
             BFFElement.weather(WeatherMap()),
-            BFFElement.weather(WeatherMap())
+            BFFElement.weather(WeatherMap()),
+            BFFElement.exit
 //            BFFElement.more(More(title: "More Title"))
         ]
     }
