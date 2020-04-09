@@ -92,6 +92,8 @@ extension MainViewController {
             output?.handle(action: .tapOnLogin)
 //        case .more:
 //            break
+        case .weather:
+            break
         }
     }
 }

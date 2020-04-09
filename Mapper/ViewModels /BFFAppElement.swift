@@ -9,8 +9,9 @@
 import Foundation
 
 /// All elements type which can be rendered in application
-public enum BFFAppElement {
+public enum BFFAppElement: Equatable {
     case articleLink(URL)
     case settingsTap
+    case weather
 //    case more
 }

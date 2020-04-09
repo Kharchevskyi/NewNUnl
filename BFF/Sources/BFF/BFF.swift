@@ -8,6 +8,7 @@ public enum BFFElement {
     case articleLink(BFFArticleLink)
     case settings(Setting)
     case more(More)
+    case weather(WeatherMap)
 }
 
 
@@ -20,7 +21,6 @@ public struct BFFArticleLink {
     }
 }
 
-
 public enum Setting: String {
     case login
     case bookmark
@@ -32,5 +32,18 @@ public struct More {
 
     public init(title: String) {
         self.title = title
+    }
+}
+
+public struct WeatherMap {
+    public let rainMapUrl: String
+    public let moreTitle: String?
+
+    public init(
+        rainMapUrl: String = "https://i.picsum.photos/id/1015/200/200.jpg",
+        moreTitle: String? = "More"
+    ) {
+        self.rainMapUrl = rainMapUrl
+        self.moreTitle = moreTitle
     }
 }

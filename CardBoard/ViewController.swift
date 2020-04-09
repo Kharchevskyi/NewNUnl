@@ -13,6 +13,8 @@ import NuUI
 class ViewController: ASViewController<ASTableNode> {
     enum UIElements: CaseIterable {
         case settingsNode
+        case weather
+        case weatherWithButton
     }
 
     let allElements: [UIElements] = UIElements.allCases
@@ -63,6 +65,24 @@ extension ViewController: ASTableDelegate, ASTableDataSource {
                     )
                 )
                 return SettingNode(input: input)
+            }
+        case .weather:
+            return {
+                WeatherImageCellNode(
+                    input: WeatherImageCellNode.Input(
+                        imageUrl: URL(string: "https://picsum.photos/200"),
+                        buttonText: nil
+                    )
+                )
+            }
+        case .weatherWithButton:
+            return {
+                WeatherImageCellNode(
+                    input: WeatherImageCellNode.Input(
+                        imageUrl: URL(string: "https://picsum.photos/200"),
+                        buttonText: NSAttributedString(string: "Text")
+                    )
+                )
             }
         }
     }

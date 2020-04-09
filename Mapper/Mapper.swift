@@ -28,6 +28,9 @@ public struct Mapper {
             case .login:
                 return SettingsViewModel(title: bffSettings.rawValue)
             }
+        case .weather(let weatherMap):
+            return WeatherMapViewModel(weatherMap)
+                
 //        case .more(let moreModel):
 //            return MoreViewModel(title: moreModel.title)
         default:
