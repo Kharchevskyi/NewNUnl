@@ -2,6 +2,8 @@
 import UIKit
 
 /// All elements that we receive from BFF
+/// Based on PR https://source.mondriaan.com/projects/NUIOS/repos/nu_monorepo_ios/pull-requests/314/overview
+
 public enum BFFElement {
     case articleLink(BFFArticleLink)
     case settings(Setting)
@@ -17,6 +19,7 @@ public struct BFFArticleLink {
         self.urlString = urlString
     }
 }
+
 
 public enum Setting: String {
     case login

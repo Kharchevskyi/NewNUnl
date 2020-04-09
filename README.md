@@ -4,17 +4,16 @@
 * With bff adding it would be a nice idea to not have a support for old, logic and a new logic, then removing an old one. 
 (Merging steps/ Removing OldContent/ Integrating new code)
 * Way to structurize an application logic.
-* Separate app responsibility
-* Modularize application
-* Easy onboarding for new developer
-* Unidirectional app flow
+* Separate app responsibility.
+* Modularize application.
+* Easy onboarding for new developer.
+* Unidirectional app flow.
 * Performance. Texture is one fo the most performance ui in iOS. 
 * Also easy way to run longtime operation on background threads and have ui update on main 
 also because of unidirectional app architecture.
-* Clear way of debugging
-* Knowledge sharing, all our logic parts are confirmed to some protocols. 
-So a lot of existed code will be reused.
-* Testability
+* Clear way of debugging.
+* Knowledge sharing, all our logic parts are confirmed to some protocols. So a lot of existed code will be reused.
+* Testability. 
 
 
 # App architecture overview
@@ -24,27 +23,28 @@ So a lot of existed code will be reused.
 `ViewController -> Interactor -> Presenter -> ViewController or Router`
 
 Application - VIP scene (generic scene)
-* ViewController 
+* **ViewController** 
     * receive a state from Presenter (update(with state: MainViewController.State))
     * send event to interactor (user action or some lifecycle event)
-* Interactor
+* **Interactor**
     * receive event from view controller and perform business logic
     * send event to Presenter
     * send routing event
-* Presenter 
+* **Presenter** 
     * send event to router to show new scene
     * send event to ViewController to update it state
-* Router 
+* **Router** 
     * perform navigation
-* MainConfigurator - helper with static function which just return a scene and inject all dependencies
+* **MainConfigurator** - helper with static function which just return a scene and inject all dependencies
 
 ## Modules
-* BFF - Code that will be generated from BFF 
-* NUCommon - some Common app functionality (Extensions). Just an example how modularisation can be
-* NuUi - Module with all UI Elements
-* Mapper - Pure function which map BFF business model to view representable model. Can be improved even more with separate module which will contain just ViewModels (see ViewModels folder)
-* CardBoard - SingleView Application where all UI elements can be tested
-* DI - Simple Dependency Injection Module (Better to use SwiftInject) or create own DI. *Example* 
+* **BFF** - Code that will be generated from BFF  *Separate Swift Package*
+* **NUCommon** - some Common app functionality (Extensions). Just an example how modularisation can be *Separate Swift Package*
+* **NuUi** - Module with all UI Elements *Separate Target*
+* **Mapper** - Pure function which map BFF business model to view representable model. Can be improved even more with separate module which will contain just ViewModels (see ViewModels folder) *Separate Swift Package*
+* **CardBoard** - SingleView Application where all UI elements can be tested *Separate App*
+* **Tracker** - Example of some Dependency. Can reuse a lot from current app.
+* **DI** - Simple Dependency Injection Module (Better to use SwiftInject) or create own DI. *Separate Swift Package*
         
 
 ## Problems described in current app

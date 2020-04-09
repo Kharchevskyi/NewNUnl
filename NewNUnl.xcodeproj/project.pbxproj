@@ -34,6 +34,8 @@
 		D253145C243E756D005760B4 /* DI in Frameworks */ = {isa = PBXBuildFile; productRef = D253145B243E756D005760B4 /* DI */; };
 		D253145F243E78E4005760B4 /* MoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D253145E243E78E4005760B4 /* MoreViewModel.swift */; };
 		D2531461243E7945005760B4 /* MoreNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2531460243E7945005760B4 /* MoreNode.swift */; };
+		D2531465243F1B66005760B4 /* SceneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2531464243F1B66005760B4 /* SceneType.swift */; };
+		D2531467243F207D005760B4 /* Tracker in Frameworks */ = {isa = PBXBuildFile; productRef = D2531466243F207D005760B4 /* Tracker */; };
 		D278EA20242BB5AF00C3978D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278EA1F242BB5AF00C3978D /* AppDelegate.swift */; };
 		D278EA22242BB5AF00C3978D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278EA21242BB5AF00C3978D /* SceneDelegate.swift */; };
 		D278EA29242BB5AF00C3978D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D278EA28242BB5AF00C3978D /* Assets.xcassets */; };
@@ -47,7 +49,6 @@
 		D2E0B246242BC1E600E8F280 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B245242BC1E600E8F280 /* MainPresenter.swift */; };
 		D2E0B248242BC1EF00E8F280 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B247242BC1EF00E8F280 /* MainRouter.swift */; };
 		D2E0B24A242BC1FA00E8F280 /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B249242BC1FA00E8F280 /* MainConfigurator.swift */; };
-		D2E0B24C242BC82200E8F280 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B24B242BC82200E8F280 /* Tracker.swift */; };
 		D2E0B258242BF64100E8F280 /* NUCommon in Frameworks */ = {isa = PBXBuildFile; productRef = D2E0B257242BF64100E8F280 /* NUCommon */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +123,7 @@
 		D2531445243E6AF0005760B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D253145E243E78E4005760B4 /* MoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewModel.swift; sourceTree = "<group>"; };
 		D2531460243E7945005760B4 /* MoreNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreNode.swift; sourceTree = "<group>"; };
+		D2531464243F1B66005760B4 /* SceneType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneType.swift; sourceTree = "<group>"; };
 		D278EA1C242BB5AF00C3978D /* NewNUnl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewNUnl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D278EA1F242BB5AF00C3978D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D278EA21242BB5AF00C3978D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,7 +140,6 @@
 		D2E0B245242BC1E600E8F280 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		D2E0B247242BC1EF00E8F280 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		D2E0B249242BC1FA00E8F280 /* MainConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
-		D2E0B24B242BC82200E8F280 /* Tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
 		D9785B8CF4858DCD6A433951 /* Pods-NewNUnl-NewUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNUnl-NewUI.release.xcconfig"; path = "Target Support Files/Pods-NewNUnl-NewUI/Pods-NewNUnl-NewUI.release.xcconfig"; sourceTree = "<group>"; };
 		E84D791A42E0E3D09BFC2C42 /* Pods-NewNUnlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNUnlTests.debug.xcconfig"; path = "Target Support Files/Pods-NewNUnlTests/Pods-NewNUnlTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F464DBD5159C16150E4A713F /* Pods_NewNUnl_Mapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewNUnl_Mapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2531467243F207D005760B4 /* Tracker in Frameworks */,
 				D2E0B258242BF64100E8F280 /* NUCommon in Frameworks */,
 				D25313D3243E4AC9005760B4 /* BFF in Frameworks */,
 				30F22982FABE373E2FD16378 /* Pods_NewNUnl.framework in Frameworks */,
@@ -287,7 +289,6 @@
 			isa = PBXGroup;
 			children = (
 				D2F6D12B2432109500DB4065 /* Resources */,
-				D2E0B24D242BC82900E8F280 /* Tracker */,
 				D2E0B242242BC1CD00E8F280 /* MainScene */,
 				D278EA28242BB5AF00C3978D /* Assets.xcassets */,
 				D278EA2A242BB5AF00C3978D /* LaunchScreen.storyboard */,
@@ -322,19 +323,12 @@
 			path = MainScene;
 			sourceTree = "<group>";
 		};
-		D2E0B24D242BC82900E8F280 /* Tracker */ = {
-			isa = PBXGroup;
-			children = (
-				D2E0B24B242BC82200E8F280 /* Tracker.swift */,
-			);
-			path = Tracker;
-			sourceTree = "<group>";
-		};
 		D2F6D12B2432109500DB4065 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				D278EA1F242BB5AF00C3978D /* AppDelegate.swift */,
 				D278EA21242BB5AF00C3978D /* SceneDelegate.swift */,
+				D2531464243F1B66005760B4 /* SceneType.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -424,6 +418,7 @@
 				D2E0B257242BF64100E8F280 /* NUCommon */,
 				D25313D2243E4AC9005760B4 /* BFF */,
 				D253145B243E756D005760B4 /* DI */,
+				D2531466243F207D005760B4 /* Tracker */,
 			);
 			productName = NewNUnl;
 			productReference = D278EA1C242BB5AF00C3978D /* NewNUnl.app */;
@@ -688,8 +683,8 @@
 				D2E0B241242BC1C700E8F280 /* MainViewController.swift in Sources */,
 				D278EA20242BB5AF00C3978D /* AppDelegate.swift in Sources */,
 				D278EA22242BB5AF00C3978D /* SceneDelegate.swift in Sources */,
-				D2E0B24C242BC82200E8F280 /* Tracker.swift in Sources */,
 				D2E0B24A242BC1FA00E8F280 /* MainConfigurator.swift in Sources */,
+				D2531465243F1B66005760B4 /* SceneType.swift in Sources */,
 				D2E0B244242BC1DD00E8F280 /* MainInteractor.swift in Sources */,
 				D2E0B248242BC1EF00E8F280 /* MainRouter.swift in Sources */,
 			);
@@ -1114,6 +1109,10 @@
 		D253145B243E756D005760B4 /* DI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DI;
+		};
+		D2531466243F207D005760B4 /* Tracker */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Tracker;
 		};
 		D2E0B257242BF64100E8F280 /* NUCommon */ = {
 			isa = XCSwiftPackageProductDependency;

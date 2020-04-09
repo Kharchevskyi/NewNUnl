@@ -9,6 +9,7 @@
 import UIKit
 import Mapper
 import BFF
+import Tracker
 import DI
 
 @UIApplicationMain

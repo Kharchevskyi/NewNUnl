@@ -8,6 +8,7 @@
 
 import Foundation
 import BFF
+import Tracker
 
 protocol MainInteractorInput {
     func handle(action: MainViewController.Action)
@@ -21,12 +22,12 @@ protocol MainInteractorOutput {
 struct MainInteractor: MainInteractorInput {
     private let tracker: TrackerType
     private let output: MainInteractorOutput
-    private let bffElementFetcher: BFFFetcher
+    private let bffElementFetcher: BFFFetcherType
 
     init(
         tracker: TrackerType,
         output: MainInteractorOutput,
-        bffElementFetcher: BFFFetcher
+        bffElementFetcher: BFFFetcherType
     ) {
         self.tracker = tracker
         self.output = output

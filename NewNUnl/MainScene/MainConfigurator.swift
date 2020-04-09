@@ -9,6 +9,7 @@
 import UIKit
 import BFF
 import Mapper
+import Tracker
 import DI
 
 //binding every vip component to implement outputs of previous component in VIP cycle
@@ -18,8 +19,8 @@ extension MainPresenter: MainInteractorOutput { }
 
 
 struct MainConfigurator {
-    static func scene() -> MainViewController {
-        let viewController = MainViewController(color: .lightGray)
+    static func scene(sceneType: SceneType = .all) -> MainViewController {
+        let viewController = MainViewController(type: sceneType)
 
         let router = MainRouter(viewController: viewController)
 

@@ -7,11 +7,17 @@
 
 import Foundation
 
-public struct BFFFetcher {
+public protocol BFFFetcherType {
+    func fetchAll() -> [BFFElement]
+    func fetchSettings() -> [BFFElement]
+}
+
+public struct BFFFetcher: BFFFetcherType {
     public init() {}
 
+    /// Example of fetching all Elements
     public func fetchAll() -> [BFFElement] {
-        return [
+        [
             googleLink(),
             BFFElement.settings(.login),
             BFFElement.settings(.bookmark),
@@ -19,7 +25,16 @@ public struct BFFFetcher {
         ]
     }
 
-    public func googleLink() -> BFFElement {
+
+    // Example of fetching Elements
+        public func fetchSettings() -> [BFFElement] {
+            [
+                BFFElement.settings(.login),
+                BFFElement.settings(.bookmark),
+            ]
+        }
+
+    func googleLink() -> BFFElement {
         BFFElement.articleLink(BFFArticleLink())
     }
 }

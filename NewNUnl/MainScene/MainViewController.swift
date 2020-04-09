@@ -25,11 +25,13 @@ final class MainViewController: ASViewController<ASTableNode> {
         case finishedLoading([BFFViewModel])
     }
 
+    private let sceneType: SceneType?
     private var state: State = .idle
 
     var output: MainViewControllerOutput?
 
-    init(color: UIColor) {
+    init(type: SceneType) {
+        self.sceneType = type
         super.init(node: ASTableNode())
         node.delegate = self
         node.dataSource = self
