@@ -1,4 +1,24 @@
-# Modules
+
+# Why?
+
+* With bff adding it would be a nice idea to not have a support for old, logic and a new logic, then removing an old one. 
+(Merging steps/ Removing OldContent/ Integrating new code)
+* Way to structurize an application logic.
+* Separate app responsibility
+* Modularize application
+* Easy onboarding for new developer
+* Unidirectional app flow
+* Performance. Texture is one fo the most performance ui in iOS. 
+* Also easy way to run longtime operation on background threads and have ui update on main 
+also because of unidirectional app architecture.
+* Clear way of debugging
+* Knowledge sharing, all our logic parts are confirmed to some protocols. 
+So a lot of existed code will be reused.
+* Testability
+
+
+
+# App architecture overview
 
 * BFF - Code that will be generated from BFF **1**
 
@@ -31,12 +51,6 @@
     ViewController -> Interactor -> Presenter -> ViewController or Router
 
 
-### TODO:
-* Show how to update one particular element in ViewController, or batch of elements (can be done with DeepDiff)
-* Inteligente preloading (AsyncDisplayKit have already this functionality)
-* Add possibility to handle tap events from view model based on it type 
-
-
 
 ### Problems described in current app
 
@@ -51,3 +65,8 @@
 8) Magic UI - all UI elements is in separate module
 9) Magic Strings - everything is type safe. Try to uncomment BFFFetcher -> fetchAll(). Everything is coupled using enums which ensures that enumeration cases aren’t accidentally omitted. You will receive just one assertion failure in Mapper, not even in an app. So our app will not crash if new element will be pushed from BFF.  
 10) Clear way how to add new content. Try step 9
+
+### TODO:
+* Show how to update one particular element in ViewController, or batch of elements (can be done with DeepDiff)
+* Inteligente preloading (AsyncDisplayKit have already this functionality)
+* Add possibility to handle tap events from view model based on it type 

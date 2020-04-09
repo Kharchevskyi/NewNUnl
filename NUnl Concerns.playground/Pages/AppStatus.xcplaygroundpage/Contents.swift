@@ -9,6 +9,13 @@ So we are quite tight to dependency that we have right now.
 
 ![NUCore](1.png)
 
+// Possible steps to solve
+ * Try to define folder structure - ✅
+ * Try to redefine folder structure - ❌
+ * Move all nucore files to a project and start modularistaion from the beginning - ❌
+ * Try to move whole Target into Swift package - 🟡 in progress but will not solve current problem
+
+
  ## Dependencies
  This is an example of how many dependencies are injected just to create an article view controller, which doesn’t even have all types of blocks that we want to show.
  So for example, if we will have one GenericViewController we will just inject all classes
@@ -23,6 +30,10 @@ So we are quite tight to dependency that we have right now.
 
  ![Dependencies](3.png)
 
+ // Possible steps to solve
+ * Use SwiftInject or any other DI library - ❌
+ * Consider refactoring 1752 lines of code - ❌
+
 
 ## CellModelFactory
 
@@ -32,9 +43,9 @@ So we are quite tight to dependency that we have right now.
  but we have the same for SectionController, WeatherController, SetttingController and so on.
  So I can assume that this will grow up even more with every new Block.
 
-
 ![CellModelFactory](4.png)
 
+ ## Debugging
 
  In Current situation is we don’t have strong types defined
  So for example, with `articleHeaderBuilder`
@@ -61,6 +72,13 @@ So we are quite tight to dependency that we have right now.
  If we have for example, array of enum cases.
  in that case we will know on compiling phase that we don’t have a proper layouter/builder/style.
 
+ // Possible steps to solve
+ * Use enum instead of strings - All app should be refactored - ❌
+ * Was proposed in chapter meeting and then declined in PR - ❌
+ * With BFF number of Contents that app suppoerts will increase.
+   Because We will have one Descriptor for all cell models (will combine all known cellModels) - ❌
+
+
  ## Huge inheritance
 
  Every subview is inherited from some class and changing in one class can lead to unpredictable behaviour in some other place.
@@ -68,10 +86,16 @@ So we are quite tight to dependency that we have right now.
  We can override the functionality and do not know who and where actually
  ![UI](7.png)
 
+ // Possible steps to solve
+ * will just grow with every new Content type - ❌
+
  ## Composability
 
  We are quite tight to current implementation and it’s almost impossible to create a separate page not in our code
  without knowing about NuCore, ContentView or CellModelFactory, and so on.
+
+ // Possible steps to solve
+ * sea Modularisation - ❌
 
  ## Logic handling
 
@@ -103,6 +127,10 @@ So we are quite tight to dependency that we have right now.
  But there are two different places who handle this and two different classes responsible for showing next controller.
  Also Tracking for this events is handled in one situation in `ArticleFlowController` and in another in `ViewControllerAssembly`
 
+ // Possible steps to solve
+ * Define clear responsibility inside app - ❌
+ * Separate routing from ArticleFlowController - ❌
+
 
  ## Routing
 
@@ -116,20 +144,39 @@ So we are quite tight to dependency that we have right now.
 
  ![routing](10.png)
 
+ // Possible steps to solve
+
+ * Have one particular flow how to handle routing events. Consider refactoring - ❌
+
+
  ## Different architectural approaches
  Overtime, different approaches mainly for BlockStreamController has been created,
  Therefore, you have different ways of how to interact with it
  For example, with RxSwift or with closures.
  We should have a team defined way of doing so, to be consistent over components.
 
+ // Possible steps to solve
+ * Not Critical for BFF implementation- ✅
+
+
  ## Magic UI
  Along the app we have hardcoded on multiple places different sizes for the font.
  Would be ideal to align with UX, and defined some names or categories for those font sizes.
  Same applies to font type, font weight, etc.
 
+ // Possible steps to solve
+ * Can increase complexity - 🟡
+
  ## Magic Strings
  Instead of using enum where statements are exhaustive which ensures that enumeration cases aren’t accidentally omitted.
  For example for displayStyle
 
+ // Possible steps to solve
+ * Can increase complexity - 🟡
+
  ![strings](11.png)
+
+❌ - Not ready
+🟡 - Not critical
+✅ - Done
 */
