@@ -11,7 +11,6 @@ public enum BFFElement: Equatable {
 
     // Patrick: 1) Add bff element
     case weather(WeatherMap)
-    case exit
 }
 
 public extension BFFElement {
