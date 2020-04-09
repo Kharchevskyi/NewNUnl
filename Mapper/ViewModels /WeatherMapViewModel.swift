@@ -47,32 +47,3 @@ public extension WeatherMapViewModel {
         self.imageUrl = URL(string: weatherMap.rainMapUrl)
     }
 }
-
-public extension Array where Element == BFFViewModel {
-    /// changing title for last weather element
-    func mapWithLastWeather(title: NSAttributedString) -> [BFFViewModel] {
-        guard self.contains(where: { $0.elementType() == .weather }) else {
-            return self
-        }
-
-        // Find last index of weather page
-        let lastIndex = self.enumerated()
-            .filter { $0.element.elementType() == .weather }
-            .last?
-            .offset
-
-        return self.enumerated().map { offset, element -> BFFViewModel in
-            if element.elementType() == .weather, offset == lastIndex {
-                return WeatherMapViewModel(
-                    buttonTitle: title,
-                    imageUrl: (element as? WeatherMapViewModel)?.imageUrl
-                )
-            }
-            return element
-        }
-    }
-}
-
-
-
-

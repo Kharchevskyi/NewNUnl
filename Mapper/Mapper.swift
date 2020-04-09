@@ -40,14 +40,3 @@ public struct Mapper {
     }
 }
 
-extension String {
-    func attributed(with fontSize: Int, color: UIColor) -> NSAttributedString {
-        NSAttributedString(
-            string: self,
-            attributes: [
-                NSAttributedString.Key.font : UIFont.systemFont(ofSize: CGFloat(fontSize)),
-                NSAttributedString.Key.foregroundColor : color
-            ]
-        )
-    }
-}

@@ -38,6 +38,12 @@
 		D2531467243F207D005760B4 /* Tracker in Frameworks */ = {isa = PBXBuildFile; productRef = D2531466243F207D005760B4 /* Tracker */; };
 		D253146A243F5DE1005760B4 /* WeatherImageCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2531469243F5DE1005760B4 /* WeatherImageCellNode.swift */; };
 		D253146C243F6149005760B4 /* WeatherMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D253146B243F6149005760B4 /* WeatherMapViewModel.swift */; };
+		D25314F9243F7DEB005760B4 /* WeatherFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D25314E9243F7DEB005760B4 /* WeatherFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D25314FC243F7DEB005760B4 /* WeatherFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25314E7243F7DEB005760B4 /* WeatherFramework.framework */; };
+		D25314FD243F7DEB005760B4 /* WeatherFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D25314E7243F7DEB005760B4 /* WeatherFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D2531504243F7DFD005760B4 /* Mapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2531416243E616B005760B4 /* Mapper.framework */; };
+		D2531506243F7E08005760B4 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2531505243F7E08005760B4 /* Weather.swift */; };
+		D2531508243F7EB4005760B4 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2531507243F7EB4005760B4 /* Helpers.swift */; };
 		D278EA20242BB5AF00C3978D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278EA1F242BB5AF00C3978D /* AppDelegate.swift */; };
 		D278EA22242BB5AF00C3978D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278EA21242BB5AF00C3978D /* SceneDelegate.swift */; };
 		D278EA29242BB5AF00C3978D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D278EA28242BB5AF00C3978D /* Assets.xcassets */; };
@@ -62,6 +68,13 @@
 			remoteGlobalIDString = D2531415243E616B005760B4;
 			remoteInfo = Mapper;
 		};
+		D25314FA243F7DEB005760B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D278EA14242BB5AF00C3978D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D25314E6243F7DEB005760B4;
+			remoteInfo = WeatherFramework;
+		};
 		D2E0B234242BBED400E8F280 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D278EA14242BB5AF00C3978D /* Project object */;
@@ -80,6 +93,7 @@
 			files = (
 				D2E0B237242BBED400E8F280 /* NuUI.framework in Embed Frameworks */,
 				D253141E243E616B005760B4 /* Mapper.framework in Embed Frameworks */,
+				D25314FD243F7DEB005760B4 /* WeatherFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -128,6 +142,11 @@
 		D2531464243F1B66005760B4 /* SceneType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneType.swift; sourceTree = "<group>"; };
 		D2531469243F5DE1005760B4 /* WeatherImageCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherImageCellNode.swift; sourceTree = "<group>"; };
 		D253146B243F6149005760B4 /* WeatherMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMapViewModel.swift; sourceTree = "<group>"; };
+		D25314E7243F7DEB005760B4 /* WeatherFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeatherFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D25314E9243F7DEB005760B4 /* WeatherFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherFramework.h; sourceTree = "<group>"; };
+		D25314EA243F7DEB005760B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2531505243F7E08005760B4 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		D2531507243F7EB4005760B4 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		D278EA1C242BB5AF00C3978D /* NewNUnl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewNUnl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D278EA1F242BB5AF00C3978D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D278EA21242BB5AF00C3978D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +187,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D25314E4243F7DEB005760B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2531504243F7DFD005760B4 /* Mapper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D278EA19242BB5AF00C3978D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -176,6 +203,7 @@
 				D2E0B258242BF64100E8F280 /* NUCommon in Frameworks */,
 				D25313D3243E4AC9005760B4 /* BFF in Frameworks */,
 				30F22982FABE373E2FD16378 /* Pods_NewNUnl.framework in Frameworks */,
+				D25314FC243F7DEB005760B4 /* WeatherFramework.framework in Frameworks */,
 				D253141D243E616B005760B4 /* Mapper.framework in Frameworks */,
 				D2E0B236242BBED400E8F280 /* NuUI.framework in Frameworks */,
 				D253145C243E756D005760B4 /* DI in Frameworks */,
@@ -234,6 +262,7 @@
 				D2531418243E616B005760B4 /* Mapper.h */,
 				D2531419243E616B005760B4 /* Info.plist */,
 				D2531422243E6174005760B4 /* Mapper.swift */,
+				D2531507243F7EB4005760B4 /* Helpers.swift */,
 				D253145D243E7797005760B4 /* ViewModels  */,
 			);
 			path = Mapper;
@@ -255,14 +284,24 @@
 		D253145D243E7797005760B4 /* ViewModels  */ = {
 			isa = PBXGroup;
 			children = (
-				D2531428243E6355005760B4 /* BFFAppElement.swift */,
 				D2531426243E632D005760B4 /* BFFViewModel.swift */,
+				D2531428243E6355005760B4 /* BFFAppElement.swift */,
 				D2531424243E6302005760B4 /* ArticleLinkViewModel.swift */,
 				D253142D243E6647005760B4 /* SettingsViewModel.swift */,
 				D253145E243E78E4005760B4 /* MoreViewModel.swift */,
 				D253146B243F6149005760B4 /* WeatherMapViewModel.swift */,
 			);
 			path = "ViewModels ";
+			sourceTree = "<group>";
+		};
+		D25314E8243F7DEB005760B4 /* WeatherFramework */ = {
+			isa = PBXGroup;
+			children = (
+				D25314E9243F7DEB005760B4 /* WeatherFramework.h */,
+				D25314EA243F7DEB005760B4 /* Info.plist */,
+				D2531505243F7E08005760B4 /* Weather.swift */,
+			);
+			path = WeatherFramework;
 			sourceTree = "<group>";
 		};
 		D278EA13242BB5AF00C3978D = {
@@ -273,6 +312,7 @@
 				D2E0B222242BBED400E8F280 /* NuUI */,
 				D2531417243E616B005760B4 /* Mapper */,
 				D2531436243E6AEE005760B4 /* CardBoard */,
+				D25314E8243F7DEB005760B4 /* WeatherFramework */,
 				D278EA1D242BB5AF00C3978D /* Products */,
 				6CB5D306E22D28B0DC69E631 /* Pods */,
 				6A1E80A89CAB5CEE2845D62F /* Frameworks */,
@@ -286,6 +326,7 @@
 				D2E0B221242BBED400E8F280 /* NuUI.framework */,
 				D2531416243E616B005760B4 /* Mapper.framework */,
 				D2531435243E6AEE005760B4 /* CardBoard.app */,
+				D25314E7243F7DEB005760B4 /* WeatherFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -350,6 +391,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D25314E2243F7DEB005760B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D25314F9243F7DEB005760B4 /* WeatherFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2E0B21C242BBED400E8F280 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -402,6 +451,24 @@
 			productReference = D2531435243E6AEE005760B4 /* CardBoard.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D25314E6243F7DEB005760B4 /* WeatherFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D25314FE243F7DEB005760B4 /* Build configuration list for PBXNativeTarget "WeatherFramework" */;
+			buildPhases = (
+				D25314E2243F7DEB005760B4 /* Headers */,
+				D25314E3243F7DEB005760B4 /* Sources */,
+				D25314E4243F7DEB005760B4 /* Frameworks */,
+				D25314E5243F7DEB005760B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeatherFramework;
+			productName = WeatherFramework;
+			productReference = D25314E7243F7DEB005760B4 /* WeatherFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		D278EA1B242BB5AF00C3978D /* NewNUnl */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D278EA46242BB5B000C3978D /* Build configuration list for PBXNativeTarget "NewNUnl" */;
@@ -418,6 +485,7 @@
 			dependencies = (
 				D2E0B235242BBED400E8F280 /* PBXTargetDependency */,
 				D253141C243E616B005760B4 /* PBXTargetDependency */,
+				D25314FB243F7DEB005760B4 /* PBXTargetDependency */,
 			);
 			name = NewNUnl;
 			packageProductDependencies = (
@@ -466,6 +534,10 @@
 					D2531434243E6AEE005760B4 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
+					D25314E6243F7DEB005760B4 = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
 					D278EA1B242BB5AF00C3978D = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -492,6 +564,7 @@
 				D2E0B220242BBED400E8F280 /* NuUI */,
 				D2531415243E616B005760B4 /* Mapper */,
 				D2531434243E6AEE005760B4 /* CardBoard */,
+				D25314E6243F7DEB005760B4 /* WeatherFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -510,6 +583,13 @@
 			files = (
 				D2531444243E6AF0005760B4 /* LaunchScreen.storyboard in Resources */,
 				D2531441243E6AF0005760B4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D25314E5243F7DEB005760B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,6 +745,7 @@
 				D253142E243E6647005760B4 /* SettingsViewModel.swift in Sources */,
 				D2531423243E6174005760B4 /* Mapper.swift in Sources */,
 				D2531429243E6355005760B4 /* BFFAppElement.swift in Sources */,
+				D2531508243F7EB4005760B4 /* Helpers.swift in Sources */,
 				D253146C243F6149005760B4 /* WeatherMapViewModel.swift in Sources */,
 				D253145F243E78E4005760B4 /* MoreViewModel.swift in Sources */,
 				D2531425243E6302005760B4 /* ArticleLinkViewModel.swift in Sources */,
@@ -679,6 +760,14 @@
 				D253143C243E6AEE005760B4 /* ViewController.swift in Sources */,
 				D2531438243E6AEE005760B4 /* AppDelegate.swift in Sources */,
 				D253143A243E6AEE005760B4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D25314E3243F7DEB005760B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2531506243F7E08005760B4 /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,6 +806,11 @@
 			isa = PBXTargetDependency;
 			target = D2531415243E616B005760B4 /* Mapper */;
 			targetProxy = D253141B243E616B005760B4 /* PBXContainerItemProxy */;
+		};
+		D25314FB243F7DEB005760B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D25314E6243F7DEB005760B4 /* WeatherFramework */;
+			targetProxy = D25314FA243F7DEB005760B4 /* PBXContainerItemProxy */;
 		};
 		D2E0B235242BBED400E8F280 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -839,6 +933,63 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D25314FF243F7DEB005760B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BS64L7F579;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = WeatherFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kharchevskyi.WeatherFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D2531500243F7DEB005760B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BS64L7F579;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = WeatherFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kharchevskyi.WeatherFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1072,6 +1223,15 @@
 			buildConfigurations = (
 				D2531452243E6AF0005760B4 /* Debug */,
 				D2531453243E6AF0005760B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D25314FE243F7DEB005760B4 /* Build configuration list for PBXNativeTarget "WeatherFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D25314FF243F7DEB005760B4 /* Debug */,
+				D2531500243F7DEB005760B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

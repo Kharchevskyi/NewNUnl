@@ -11,7 +11,8 @@ import NuUI
 import UIKit
 import NUCommon
 import BFF
-import Mapper 
+import Mapper
+import WeatherFramework
 
 protocol MainPresenterInput {
     func update(with updateType: MainPresenter.UpdateEvent)
