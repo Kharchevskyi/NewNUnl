@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/kharchevskyi/iOS/NewNUnl/NUnl Concerns.playground">
-   </FileRef>
-   <FileRef
       location = "group:DI">
    </FileRef>
    <FileRef
