@@ -15,8 +15,10 @@ also because of unidirectional app architecture.
 * Knowledge sharing, all our logic parts are confirmed to some protocols. So a lot of existed code will be reused.
 * Testability. 
 
+# Concerns
+![concerns](https://github.com/Kharchevskyi/NewNUnl/master/Nunl.pdf)
 
-# App architecture overview
+# Proposed App. Overview
 
 ## Unidirectional app flow (VIP)
 
