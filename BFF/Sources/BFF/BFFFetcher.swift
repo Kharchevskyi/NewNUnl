@@ -24,8 +24,7 @@ public struct BFFFetcher: BFFFetcherType {
             BFFElement.settings(.login),
             BFFElement.settings(.bookmark),
             BFFElement.weather(WeatherMap()),
-            BFFElement.weather(WeatherMap()),
-            BFFElement.exit
+            BFFElement.weather(WeatherMap())
 //            BFFElement.more(More(title: "More Title"))
         ]
     }
