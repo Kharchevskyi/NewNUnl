@@ -48,6 +48,7 @@
 		D278EA22242BB5AF00C3978D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278EA21242BB5AF00C3978D /* SceneDelegate.swift */; };
 		D278EA29242BB5AF00C3978D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D278EA28242BB5AF00C3978D /* Assets.xcassets */; };
 		D278EA2C242BB5AF00C3978D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D278EA2A242BB5AF00C3978D /* LaunchScreen.storyboard */; };
+		D297990B24406639004A3E31 /* SettingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D297990A24406639004A3E31 /* SettingInteractor.swift */; };
 		D2E0B233242BBED400E8F280 /* NuUI.h in Headers */ = {isa = PBXBuildFile; fileRef = D2E0B223242BBED400E8F280 /* NuUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2E0B236242BBED400E8F280 /* NuUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E0B221242BBED400E8F280 /* NuUI.framework */; };
 		D2E0B237242BBED400E8F280 /* NuUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D2E0B221242BBED400E8F280 /* NuUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -153,6 +154,7 @@
 		D278EA28242BB5AF00C3978D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D278EA2B242BB5AF00C3978D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D278EA2D242BB5AF00C3978D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D297990A24406639004A3E31 /* SettingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingInteractor.swift; sourceTree = "<group>"; };
 		D2C496E0BF1F757885288636 /* Pods_NewNUnlTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewNUnlTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E0B221242BBED400E8F280 /* NuUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NuUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E0B223242BBED400E8F280 /* NuUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NuUI.h; sourceTree = "<group>"; };
@@ -364,6 +366,7 @@
 				D2E0B249242BC1FA00E8F280 /* MainConfigurator.swift */,
 				D2E0B240242BC1C700E8F280 /* MainViewController.swift */,
 				D2E0B243242BC1DD00E8F280 /* MainInteractor.swift */,
+				D297990A24406639004A3E31 /* SettingInteractor.swift */,
 				D2E0B245242BC1E600E8F280 /* MainPresenter.swift */,
 				D2E0B247242BC1EF00E8F280 /* MainRouter.swift */,
 			);
@@ -775,6 +778,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D297990B24406639004A3E31 /* SettingInteractor.swift in Sources */,
 				D2E0B246242BC1E600E8F280 /* MainPresenter.swift in Sources */,
 				D2E0B241242BC1C700E8F280 /* MainViewController.swift in Sources */,
 				D278EA20242BB5AF00C3978D /* AppDelegate.swift in Sources */,

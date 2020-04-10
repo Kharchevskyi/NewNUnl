@@ -41,7 +41,7 @@ struct MainInteractor: MainInteractorInput {
 
     func handle(action: MainViewController.Action) {
         switch action {
-        case .setup(.all):
+        case .setup:
             // perform some setup, for example fetch something
             fetchBlocks()
 
@@ -55,8 +55,6 @@ struct MainInteractor: MainInteractorInput {
                 tracker.trackScroll(with: percent)
             case .tapOnLink(let url):
                 output.proceedTo(scene: .webView(url))
-        case .setup(.settings):
-            fetchSettings()
         case .tapOnLogin:
             output.proceedTo(scene: .loginScene)
         }
@@ -74,38 +72,5 @@ extension MainInteractor {
 
     private func track() {
         tracker.track()
-    }
-
-    private func fetchSettings() {
-        let allSettingsBlocks = bffElementFetcher.fetchAll().filter { $0.isSettings }
-        output.update(with: .loadedElements(allSettingsBlocks))
-    }
-}
-
-
-struct SettingInteractor: MainInteractorInput {
-    private let output: MainInteractorOutput
-    private let bffElementFetcher: BFFFetcherType
-
-    init(
-        output: MainInteractorOutput,
-        bffElementFetcher: BFFFetcherType
-    ) {
-        self.output = output
-        self.bffElementFetcher = bffElementFetcher
-    }
-
-    func handle(action: MainViewController.Action) {
-        switch action {
-        case .setup(.settings):
-            fetchSettings()
-        default: break
-            output.proceedTo(scene: .loginScene)
-        }
-    }
-
-    private func fetchSettings() {
-        let allSettingsBlocks = bffElementFetcher.fetchAll().filter { $0.isSettings }
-        output.update(with: .loadedElements(allSettingsBlocks))
     }
 }
