@@ -15,6 +15,7 @@ import DI
 //binding every vip component to implement outputs of previous component in VIP cycle
 extension MainViewController: MainPresenterOutput { }
 extension MainInteractor: MainViewControllerOutput { }
+extension SettingInteractor: MainViewControllerOutput { }
 extension MainPresenter: MainInteractorOutput { }
 
 
@@ -30,15 +31,23 @@ struct MainConfigurator {
             mapper: inject(type: Mapper.self, fallback: Mapper())
         )
 
-        let interactor = MainInteractor(
-            tracker: inject(type: Tracker.self, fallback: Tracker()),
-            output: presenter,
-            bffElementFetcher: inject(type: BFFFetcher.self, fallback: BFFFetcher())
-        )
-        
-        viewController.output = interactor
-
-        return viewController
+        switch sceneType {
+        case .all:
+            let interactor = MainInteractor(
+                tracker: inject(type: Tracker.self, fallback: Tracker()),
+                output: presenter,
+                bffElementFetcher: inject(type: BFFFetcher.self, fallback: BFFFetcher())
+            )
+            viewController.output = interactor
+            return viewController
+        case .settings:
+            let interactor = SettingInteractor(
+                output: presenter,
+                bffElementFetcher: inject(type: BFFFetcher.self, fallback: BFFFetcher())
+            )
+            viewController.output = interactor
+            return viewController
+        }
     }
 }
 

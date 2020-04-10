@@ -81,3 +81,31 @@ extension MainInteractor {
         output.update(with: .loadedElements(allSettingsBlocks))
     }
 }
+
+
+struct SettingInteractor: MainInteractorInput {
+    private let output: MainInteractorOutput
+    private let bffElementFetcher: BFFFetcherType
+
+    init(
+        output: MainInteractorOutput,
+        bffElementFetcher: BFFFetcherType
+    ) {
+        self.output = output
+        self.bffElementFetcher = bffElementFetcher
+    }
+
+    func handle(action: MainViewController.Action) {
+        switch action {
+        case .setup(.settings):
+            fetchSettings()
+        default: break
+            output.proceedTo(scene: .loginScene)
+        }
+    }
+
+    private func fetchSettings() {
+        let allSettingsBlocks = bffElementFetcher.fetchAll().filter { $0.isSettings }
+        output.update(with: .loadedElements(allSettingsBlocks))
+    }
+}
