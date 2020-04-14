@@ -45,20 +45,41 @@ public final class ArticleHeaderNode: CellNode {
     }
 
     public override func layoutSpecThatFits(_ size: ASSizeRange) -> ASLayoutSpec {
-        imageNode.style.preferredSize = CGSize(width: size.max.width, height: size.max.width*1.33)
+        imageNode.style.preferredSize = CGSize(width: size.max.width, height: size.max.width*0.7)
+        imageNode.gradientBackgroundColor(
+            [
+                UIColor.lightGray.withAlphaComponent(0.1).cgColor,
+                UIColor.darkGray.withAlphaComponent(0.5).cgColor
+            ],
+            direction: .vertical
+        )
 
         let imageHeader = ASOverlayLayoutSpec(
             child: imageNode,
-            overlay: textNode
+            overlay: ASInsetLayoutSpec(
+                insets: UIEdgeInsets(
+                    top: .infinity,
+                    left: 16,
+                    bottom: 8,
+                    right: 16
+                ),
+                child: textNode
+            )
         )
 
+        let subtitleSpec = ASInsetLayoutSpec(
+            insets: UIEdgeInsets(top: 8, left: 16, bottom: 0, right: 16),
+            child: subtitleNode
+        )
         let stack = ASStackLayoutSpec(
             direction: .vertical,
             spacing: 20,
             justifyContent: .start,
             alignItems: .start,
             children: [
-                imageHeader, subtitleNode, dateNode
+                imageHeader,
+                subtitleSpec,
+                dateNode
             ]
         )
 

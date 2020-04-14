@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1706EC57E3DBB5FC7C012627 /* Pods_NewNUnl_CardBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 685D61120C8B3F3EDBE65EEE /* Pods_NewNUnl_CardBoard.framework */; };
 		30F22982FABE373E2FD16378 /* Pods_NewNUnl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9AEC10F6E73F321EA486E5A /* Pods_NewNUnl.framework */; };
-		3AFBDED1CDFBB66A678607C2 /* Pods_NewNUnl_Mapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F464DBD5159C16150E4A713F /* Pods_NewNUnl_Mapper.framework */; };
+		3AFBDED1CDFBB66A678607C2 /* Pods_NewNUnl_Mapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F464DBD5159C16150E4A713F /* Pods_NewNUnl_Mapper.framework */; platformFilter = ios; };
 		6BD76585676B503ABA45C0C5 /* Pods_NewNUnl_NuUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2AD9754A796B449E498D467 /* Pods_NewNUnl_NuUI.framework */; };
 		D25313D3243E4AC9005760B4 /* BFF in Frameworks */ = {isa = PBXBuildFile; productRef = D25313D2243E4AC9005760B4 /* BFF */; };
 		D25313D5243E4BF3005760B4 /* ActivityIndicatorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25313D4243E4BF3005760B4 /* ActivityIndicatorNode.swift */; };
@@ -22,8 +22,8 @@
 		D2531425243E6302005760B4 /* ArticleLinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2531424243E6302005760B4 /* ArticleLinkViewModel.swift */; };
 		D2531427243E632D005760B4 /* BFFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2531426243E632D005760B4 /* BFFViewModel.swift */; };
 		D2531429243E6355005760B4 /* BFFAppElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2531428243E6355005760B4 /* BFFAppElement.swift */; };
-		D253142B243E651A005760B4 /* BFF in Frameworks */ = {isa = PBXBuildFile; productRef = D253142A243E651A005760B4 /* BFF */; };
-		D253142C243E656E005760B4 /* NuUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E0B221242BBED400E8F280 /* NuUI.framework */; };
+		D253142B243E651A005760B4 /* BFF in Frameworks */ = {isa = PBXBuildFile; platformFilter = ios; productRef = D253142A243E651A005760B4 /* BFF */; };
+		D253142C243E656E005760B4 /* NuUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E0B221242BBED400E8F280 /* NuUI.framework */; platformFilter = ios; };
 		D253142E243E6647005760B4 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D253142D243E6647005760B4 /* SettingsViewModel.swift */; };
 		D2531430243E68AE005760B4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D253142F243E68AE005760B4 /* README.md */; };
 		D2531438243E6AEE005760B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2531437243E6AEE005760B4 /* AppDelegate.swift */; };
@@ -52,7 +52,8 @@
 		D29799112445D7ED004A3E31 /* ArticleHeaderNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29799102445D7ED004A3E31 /* ArticleHeaderNode.swift */; };
 		D29799132445DA25004A3E31 /* ArticleTitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29799122445DA25004A3E31 /* ArticleTitleViewModel.swift */; };
 		D29799152445DA5E004A3E31 /* TextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29799142445DA5E004A3E31 /* TextNode.swift */; };
-		D29799172445DF04004A3E31 /* HTMLParser in Frameworks */ = {isa = PBXBuildFile; productRef = D29799162445DF04004A3E31 /* HTMLParser */; };
+		D29799172445DF04004A3E31 /* HTMLParser in Frameworks */ = {isa = PBXBuildFile; platformFilter = ios; productRef = D29799162445DF04004A3E31 /* HTMLParser */; };
+		D29799192445E2DB004A3E31 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29799182445E2DB004A3E31 /* Extensions.swift */; };
 		D2E0B233242BBED400E8F280 /* NuUI.h in Headers */ = {isa = PBXBuildFile; fileRef = D2E0B223242BBED400E8F280 /* NuUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2E0B236242BBED400E8F280 /* NuUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E0B221242BBED400E8F280 /* NuUI.framework */; };
 		D2E0B237242BBED400E8F280 /* NuUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D2E0B221242BBED400E8F280 /* NuUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -161,6 +162,7 @@
 		D29799102445D7ED004A3E31 /* ArticleHeaderNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleHeaderNode.swift; sourceTree = "<group>"; };
 		D29799122445DA25004A3E31 /* ArticleTitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTitleViewModel.swift; sourceTree = "<group>"; };
 		D29799142445DA5E004A3E31 /* TextNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNode.swift; sourceTree = "<group>"; };
+		D29799182445E2DB004A3E31 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D2C496E0BF1F757885288636 /* Pods_NewNUnlTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewNUnlTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E0B221242BBED400E8F280 /* NuUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NuUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E0B223242BBED400E8F280 /* NuUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NuUI.h; sourceTree = "<group>"; };
@@ -366,6 +368,7 @@
 				D2531460243E7945005760B4 /* MoreNode.swift */,
 				D2531469243F5DE1005760B4 /* WeatherImageCellNode.swift */,
 				D29799102445D7ED004A3E31 /* ArticleHeaderNode.swift */,
+				D29799182445E2DB004A3E31 /* Extensions.swift */,
 			);
 			path = NuUI;
 			sourceTree = "<group>";
@@ -805,6 +808,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D25313D5243E4BF3005760B4 /* ActivityIndicatorNode.swift in Sources */,
+				D29799192445E2DB004A3E31 /* Extensions.swift in Sources */,
 				D25313DD243E53B2005760B4 /* LinkNode.swift in Sources */,
 				D29799112445D7ED004A3E31 /* ArticleHeaderNode.swift in Sources */,
 				D2531461243E7945005760B4 /* MoreNode.swift in Sources */,

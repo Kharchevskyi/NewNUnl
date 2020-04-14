@@ -43,6 +43,7 @@ final class MainViewController: ASViewController<ASTableNode> {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        node.view.separatorStyle = .none
         output?.handle(action: .setup(sceneType ?? .all))
     }
 
