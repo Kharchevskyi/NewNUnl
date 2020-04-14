@@ -1,12 +1,12 @@
 import XCTest
-@testable import NUCommon
+@testable import HTMLParser
 
-final class NUCommonTests: XCTestCase {
+final class HTMLParserTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(NUCommon().text, "Hello, World!")
+        XCTAssertEqual(HTMLParser().text, "Hello, World!")
     }
 
     static var allTests = [

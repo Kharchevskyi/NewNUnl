@@ -21,18 +21,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         let settings = MainConfigurator.scene(sceneType: .settings)
         settings.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 1)
-        
+
+        let article = MainConfigurator.scene(sceneType: .article("Some article id"))
+        article.tabBarItem = UITabBarItem(tabBarSystemItem: .topRated, tag: 3)
+
         let tabBarController = UITabBarController()
 
-        tabBarController.viewControllers = [main, settings]
+        tabBarController.viewControllers = [article, main, settings]
 
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
-        window?.windowScene = windowScene
-
-
-        
-
+        window?.windowScene = windowScene 
     }
 }
 

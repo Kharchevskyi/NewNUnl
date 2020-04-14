@@ -8,9 +8,11 @@ public enum BFFElement: Equatable {
     case articleLink(BFFArticleLink)
     case settings(Setting)
     case more(More)
-
-    // Patrick: 1) Add bff element
     case weather(WeatherMap)
+
+    // Article
+    case articleTitle(ArticleTitle)
+    case articleBody(ArticleBody)
 }
 
 public extension BFFElement {

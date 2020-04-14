@@ -9,5 +9,7 @@
 import Foundation
 
 enum SceneType {
-    case all, settings
+    case all // for testing purpose
+    case settings
+    case article(_ id: String)
 }

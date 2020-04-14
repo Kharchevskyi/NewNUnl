@@ -13,5 +13,7 @@ public enum BFFAppElement: Equatable {
     case articleLink(URL)
     case settingsTap
     case weather
+    case articleHeader
+    case articleBody
 //    case more
 }

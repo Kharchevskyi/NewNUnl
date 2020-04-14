@@ -10,6 +10,7 @@ import Foundation
 public protocol BFFFetcherType {
     func fetchAll() -> [BFFElement]
     func fetchSettings() -> [BFFElement]
+    func fetchArticle() -> [BFFElement]
 }
 
 public struct BFFFetcher: BFFFetcherType {
@@ -24,21 +25,33 @@ public struct BFFFetcher: BFFFetcherType {
             BFFElement.settings(.login),
             BFFElement.settings(.bookmark),
             BFFElement.weather(WeatherMap()),
-            BFFElement.weather(WeatherMap())
+            BFFElement.weather(WeatherMap()),
+            BFFElement.settings(.logOut)
 //            BFFElement.more(More(title: "More Title"))
         ]
     }
 
 
     // Example of fetching Elements
-        public func fetchSettings() -> [BFFElement] {
-            [
-                BFFElement.settings(.login),
-                BFFElement.settings(.bookmark),
-            ]
-        }
+    public func fetchSettings() -> [BFFElement] {
+        [
+            BFFElement.settings(.login),
+            BFFElement.settings(.bookmark),
+        ]
+    }
+
+    public func fetchArticle() -> [BFFElement] {
+        [
+            BFFElement.articleTitle(ArticleTitle()),
+            BFFElement.articleBody(ArticleBody.block1),
+            BFFElement.articleBody(ArticleBody.block2),
+            BFFElement.articleBody(ArticleBody.block3),
+            BFFElement.articleBody(ArticleBody.block4)
+        ]
+    }
 
     func googleLink() -> BFFElement {
         BFFElement.articleLink(BFFArticleLink())
     }
 }
+

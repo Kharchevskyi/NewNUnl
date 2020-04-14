@@ -43,7 +43,11 @@ final class MainViewController: ASViewController<ASTableNode> {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        output?.handle(action: .setup)
+        output?.handle(action: .setup(sceneType ?? .all))
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        output?.handle(action: .appeared)
     }
 }
 
@@ -88,12 +92,10 @@ extension MainViewController {
         switch elementType {
         case let .articleLink(url):
             output?.handle(action: .tapOnLink(url))
-        case .settingsTap:
-            output?.handle(action: .tapOnLogin)
-//        case .more:
-//            break
-        case .weather:
-            break
+        case .settingsTap: break
+        case .weather: break
+        case .articleHeader: break
+        case .articleBody: break
         }
     }
 }
@@ -117,9 +119,10 @@ extension MainViewController: MainViewControllerInput {
 extension MainViewController {
     /// all actions that view controller can perform
     enum Action {
-        case setup
+        case setup(SceneType)
         case tapOnLink(_ url: URL)
         case scroll(_ percent: CGFloat)
         case tapOnLogin
+        case appeared
     }
 }

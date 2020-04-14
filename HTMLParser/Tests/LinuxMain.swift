@@ -1,7 +1,7 @@
 import XCTest
 
-import NUCommonTests
+import HTMLParserTests
 
 var tests = [XCTestCaseEntry]()
-tests += NUCommonTests.allTests()
+tests += HTMLParserTests.allTests()
 XCTMain(tests)

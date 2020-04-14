@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:HTMLParser">
+   </FileRef>
+   <FileRef
       location = "group:Tracker">
    </FileRef>
    <FileRef
@@ -9,9 +12,6 @@
    </FileRef>
    <FileRef
       location = "group:BFF">
-   </FileRef>
-   <FileRef
-      location = "group:NUCommon">
    </FileRef>
    <FileRef
       location = "group:NewNUnl.xcodeproj">

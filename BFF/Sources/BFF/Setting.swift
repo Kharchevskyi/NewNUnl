@@ -10,5 +10,5 @@ import Foundation
 public enum Setting: String, Equatable {
     case login
     case bookmark
-//    case logOut
+    case logOut
 }

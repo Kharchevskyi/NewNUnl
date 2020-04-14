@@ -48,7 +48,11 @@
 		D278EA22242BB5AF00C3978D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278EA21242BB5AF00C3978D /* SceneDelegate.swift */; };
 		D278EA29242BB5AF00C3978D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D278EA28242BB5AF00C3978D /* Assets.xcassets */; };
 		D278EA2C242BB5AF00C3978D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D278EA2A242BB5AF00C3978D /* LaunchScreen.storyboard */; };
-		D297990B24406639004A3E31 /* SettingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D297990A24406639004A3E31 /* SettingInteractor.swift */; };
+		D297990F2445CAE5004A3E31 /* ArticleBodyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D297990E2445CAE5004A3E31 /* ArticleBodyViewModel.swift */; };
+		D29799112445D7ED004A3E31 /* ArticleHeaderNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29799102445D7ED004A3E31 /* ArticleHeaderNode.swift */; };
+		D29799132445DA25004A3E31 /* ArticleTitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29799122445DA25004A3E31 /* ArticleTitleViewModel.swift */; };
+		D29799152445DA5E004A3E31 /* TextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29799142445DA5E004A3E31 /* TextNode.swift */; };
+		D29799172445DF04004A3E31 /* HTMLParser in Frameworks */ = {isa = PBXBuildFile; productRef = D29799162445DF04004A3E31 /* HTMLParser */; };
 		D2E0B233242BBED400E8F280 /* NuUI.h in Headers */ = {isa = PBXBuildFile; fileRef = D2E0B223242BBED400E8F280 /* NuUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2E0B236242BBED400E8F280 /* NuUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E0B221242BBED400E8F280 /* NuUI.framework */; };
 		D2E0B237242BBED400E8F280 /* NuUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D2E0B221242BBED400E8F280 /* NuUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -58,7 +62,6 @@
 		D2E0B246242BC1E600E8F280 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B245242BC1E600E8F280 /* MainPresenter.swift */; };
 		D2E0B248242BC1EF00E8F280 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B247242BC1EF00E8F280 /* MainRouter.swift */; };
 		D2E0B24A242BC1FA00E8F280 /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B249242BC1FA00E8F280 /* MainConfigurator.swift */; };
-		D2E0B258242BF64100E8F280 /* NUCommon in Frameworks */ = {isa = PBXBuildFile; productRef = D2E0B257242BF64100E8F280 /* NUCommon */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,7 +157,10 @@
 		D278EA28242BB5AF00C3978D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D278EA2B242BB5AF00C3978D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D278EA2D242BB5AF00C3978D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D297990A24406639004A3E31 /* SettingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingInteractor.swift; sourceTree = "<group>"; };
+		D297990E2445CAE5004A3E31 /* ArticleBodyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleBodyViewModel.swift; sourceTree = "<group>"; };
+		D29799102445D7ED004A3E31 /* ArticleHeaderNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleHeaderNode.swift; sourceTree = "<group>"; };
+		D29799122445DA25004A3E31 /* ArticleTitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTitleViewModel.swift; sourceTree = "<group>"; };
+		D29799142445DA5E004A3E31 /* TextNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNode.swift; sourceTree = "<group>"; };
 		D2C496E0BF1F757885288636 /* Pods_NewNUnlTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewNUnlTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E0B221242BBED400E8F280 /* NuUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NuUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E0B223242BBED400E8F280 /* NuUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NuUI.h; sourceTree = "<group>"; };
@@ -175,6 +181,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D29799172445DF04004A3E31 /* HTMLParser in Frameworks */,
 				D253142C243E656E005760B4 /* NuUI.framework in Frameworks */,
 				3AFBDED1CDFBB66A678607C2 /* Pods_NewNUnl_Mapper.framework in Frameworks */,
 				D253142B243E651A005760B4 /* BFF in Frameworks */,
@@ -202,7 +209,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2531467243F207D005760B4 /* Tracker in Frameworks */,
-				D2E0B258242BF64100E8F280 /* NUCommon in Frameworks */,
 				D25313D3243E4AC9005760B4 /* BFF in Frameworks */,
 				30F22982FABE373E2FD16378 /* Pods_NewNUnl.framework in Frameworks */,
 				D25314FC243F7DEB005760B4 /* WeatherFramework.framework in Frameworks */,
@@ -292,6 +298,8 @@
 				D253142D243E6647005760B4 /* SettingsViewModel.swift */,
 				D253145E243E78E4005760B4 /* MoreViewModel.swift */,
 				D253146B243F6149005760B4 /* WeatherMapViewModel.swift */,
+				D297990E2445CAE5004A3E31 /* ArticleBodyViewModel.swift */,
+				D29799122445DA25004A3E31 /* ArticleTitleViewModel.swift */,
 			);
 			path = "ViewModels ";
 			sourceTree = "<group>";
@@ -354,8 +362,10 @@
 				D25313D4243E4BF3005760B4 /* ActivityIndicatorNode.swift */,
 				D25313D6243E4D3B005760B4 /* CellNode.swift */,
 				D25313DC243E53B2005760B4 /* LinkNode.swift */,
+				D29799142445DA5E004A3E31 /* TextNode.swift */,
 				D2531460243E7945005760B4 /* MoreNode.swift */,
 				D2531469243F5DE1005760B4 /* WeatherImageCellNode.swift */,
+				D29799102445D7ED004A3E31 /* ArticleHeaderNode.swift */,
 			);
 			path = NuUI;
 			sourceTree = "<group>";
@@ -366,7 +376,6 @@
 				D2E0B249242BC1FA00E8F280 /* MainConfigurator.swift */,
 				D2E0B240242BC1C700E8F280 /* MainViewController.swift */,
 				D2E0B243242BC1DD00E8F280 /* MainInteractor.swift */,
-				D297990A24406639004A3E31 /* SettingInteractor.swift */,
 				D2E0B245242BC1E600E8F280 /* MainPresenter.swift */,
 				D2E0B247242BC1EF00E8F280 /* MainRouter.swift */,
 			);
@@ -430,6 +439,7 @@
 			name = Mapper;
 			packageProductDependencies = (
 				D253142A243E651A005760B4 /* BFF */,
+				D29799162445DF04004A3E31 /* HTMLParser */,
 			);
 			productName = Mapper;
 			productReference = D2531416243E616B005760B4 /* Mapper.framework */;
@@ -492,7 +502,6 @@
 			);
 			name = NewNUnl;
 			packageProductDependencies = (
-				D2E0B257242BF64100E8F280 /* NUCommon */,
 				D25313D2243E4AC9005760B4 /* BFF */,
 				D253145B243E756D005760B4 /* DI */,
 				D2531466243F207D005760B4 /* Tracker */,
@@ -747,9 +756,11 @@
 			files = (
 				D253142E243E6647005760B4 /* SettingsViewModel.swift in Sources */,
 				D2531423243E6174005760B4 /* Mapper.swift in Sources */,
+				D297990F2445CAE5004A3E31 /* ArticleBodyViewModel.swift in Sources */,
 				D2531429243E6355005760B4 /* BFFAppElement.swift in Sources */,
 				D2531508243F7EB4005760B4 /* Helpers.swift in Sources */,
 				D253146C243F6149005760B4 /* WeatherMapViewModel.swift in Sources */,
+				D29799132445DA25004A3E31 /* ArticleTitleViewModel.swift in Sources */,
 				D253145F243E78E4005760B4 /* MoreViewModel.swift in Sources */,
 				D2531425243E6302005760B4 /* ArticleLinkViewModel.swift in Sources */,
 				D2531427243E632D005760B4 /* BFFViewModel.swift in Sources */,
@@ -778,7 +789,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D297990B24406639004A3E31 /* SettingInteractor.swift in Sources */,
 				D2E0B246242BC1E600E8F280 /* MainPresenter.swift in Sources */,
 				D2E0B241242BC1C700E8F280 /* MainViewController.swift in Sources */,
 				D278EA20242BB5AF00C3978D /* AppDelegate.swift in Sources */,
@@ -796,7 +806,9 @@
 			files = (
 				D25313D5243E4BF3005760B4 /* ActivityIndicatorNode.swift in Sources */,
 				D25313DD243E53B2005760B4 /* LinkNode.swift in Sources */,
+				D29799112445D7ED004A3E31 /* ArticleHeaderNode.swift in Sources */,
 				D2531461243E7945005760B4 /* MoreNode.swift in Sources */,
+				D29799152445DA5E004A3E31 /* TextNode.swift in Sources */,
 				D2E0B23F242BBEEF00E8F280 /* SettingsNode.swift in Sources */,
 				D253146A243F5DE1005760B4 /* WeatherImageCellNode.swift in Sources */,
 				D25313D7243E4D3B005760B4 /* CellNode.swift in Sources */,
@@ -1286,9 +1298,9 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = Tracker;
 		};
-		D2E0B257242BF64100E8F280 /* NUCommon */ = {
+		D29799162445DF04004A3E31 /* HTMLParser */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = NUCommon;
+			productName = HTMLParser;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
