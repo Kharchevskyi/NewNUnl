@@ -13,6 +13,9 @@ public enum BFFElement: Equatable {
     // Article
     case articleTitle(ArticleTitle)
     case articleBody(ArticleBody)
+
+    // Slideshow
+    case slideshow(urls: [String])
 }
 
 public extension BFFElement {

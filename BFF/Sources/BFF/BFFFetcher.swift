@@ -45,6 +45,14 @@ public struct BFFFetcher: BFFFetcherType {
             BFFElement.articleTitle(ArticleTitle()),
             BFFElement.articleBody(ArticleBody.block1),
             BFFElement.articleBody(ArticleBody.block2),
+            BFFElement.slideshow(urls: [
+                "https://picsum.photos/300",
+                "https://picsum.photos/305",
+                "https://picsum.photos/301",
+                "https://picsum.photos/302",
+                "https://picsum.photos/303",
+                "https://picsum.photos/304"
+            ]),
             BFFElement.articleBody(ArticleBody.block3),
             BFFElement.articleBody(ArticleBody.block4)
         ]
@@ -54,4 +62,5 @@ public struct BFFFetcher: BFFFetcherType {
         BFFElement.articleLink(BFFArticleLink())
     }
 }
+
 

@@ -63,6 +63,8 @@
 		D2E0B246242BC1E600E8F280 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B245242BC1E600E8F280 /* MainPresenter.swift */; };
 		D2E0B248242BC1EF00E8F280 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B247242BC1EF00E8F280 /* MainRouter.swift */; };
 		D2E0B24A242BC1FA00E8F280 /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B249242BC1FA00E8F280 /* MainConfigurator.swift */; };
+		D2F50A8F2448A61E00035757 /* SlideShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F50A8E2448A61E00035757 /* SlideShowViewModel.swift */; };
+		D2F50A912448A65100035757 /* SlideShowCollectionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F50A902448A65100035757 /* SlideShowCollectionNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -173,6 +175,8 @@
 		D2E0B245242BC1E600E8F280 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		D2E0B247242BC1EF00E8F280 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		D2E0B249242BC1FA00E8F280 /* MainConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
+		D2F50A8E2448A61E00035757 /* SlideShowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideShowViewModel.swift; sourceTree = "<group>"; };
+		D2F50A902448A65100035757 /* SlideShowCollectionNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideShowCollectionNode.swift; sourceTree = "<group>"; };
 		D9785B8CF4858DCD6A433951 /* Pods-NewNUnl-NewUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNUnl-NewUI.release.xcconfig"; path = "Target Support Files/Pods-NewNUnl-NewUI/Pods-NewNUnl-NewUI.release.xcconfig"; sourceTree = "<group>"; };
 		E84D791A42E0E3D09BFC2C42 /* Pods-NewNUnlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNUnlTests.debug.xcconfig"; path = "Target Support Files/Pods-NewNUnlTests/Pods-NewNUnlTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F464DBD5159C16150E4A713F /* Pods_NewNUnl_Mapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewNUnl_Mapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -302,6 +306,7 @@
 				D253146B243F6149005760B4 /* WeatherMapViewModel.swift */,
 				D297990E2445CAE5004A3E31 /* ArticleBodyViewModel.swift */,
 				D29799122445DA25004A3E31 /* ArticleTitleViewModel.swift */,
+				D2F50A8E2448A61E00035757 /* SlideShowViewModel.swift */,
 			);
 			path = "ViewModels ";
 			sourceTree = "<group>";
@@ -368,6 +373,7 @@
 				D2531460243E7945005760B4 /* MoreNode.swift */,
 				D2531469243F5DE1005760B4 /* WeatherImageCellNode.swift */,
 				D29799102445D7ED004A3E31 /* ArticleHeaderNode.swift */,
+				D2F50A902448A65100035757 /* SlideShowCollectionNode.swift */,
 				D29799182445E2DB004A3E31 /* Extensions.swift */,
 			);
 			path = NuUI;
@@ -763,6 +769,7 @@
 				D2531429243E6355005760B4 /* BFFAppElement.swift in Sources */,
 				D2531508243F7EB4005760B4 /* Helpers.swift in Sources */,
 				D253146C243F6149005760B4 /* WeatherMapViewModel.swift in Sources */,
+				D2F50A8F2448A61E00035757 /* SlideShowViewModel.swift in Sources */,
 				D29799132445DA25004A3E31 /* ArticleTitleViewModel.swift in Sources */,
 				D253145F243E78E4005760B4 /* MoreViewModel.swift in Sources */,
 				D2531425243E6302005760B4 /* ArticleLinkViewModel.swift in Sources */,
@@ -807,6 +814,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2F50A912448A65100035757 /* SlideShowCollectionNode.swift in Sources */,
 				D25313D5243E4BF3005760B4 /* ActivityIndicatorNode.swift in Sources */,
 				D29799192445E2DB004A3E31 /* Extensions.swift in Sources */,
 				D25313DD243E53B2005760B4 /* LinkNode.swift in Sources */,

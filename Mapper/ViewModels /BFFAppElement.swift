@@ -15,5 +15,6 @@ public enum BFFAppElement: Equatable {
     case weather
     case articleHeader
     case articleBody
+    case slideshow
 //    case more
 }

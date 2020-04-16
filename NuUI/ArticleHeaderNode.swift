@@ -77,9 +77,9 @@ public final class ArticleHeaderNode: CellNode {
             justifyContent: .start,
             alignItems: .start,
             children: [
+                dateNode,
                 imageHeader,
-                subtitleSpec,
-                dateNode
+                subtitleSpec
             ]
         )
 

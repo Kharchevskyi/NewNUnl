@@ -9,7 +9,6 @@
 import Foundation
 import NuUI
 import UIKit
-import NUCommon
 import BFF
 import Mapper
 import WeatherFramework

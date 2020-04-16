@@ -9,7 +9,6 @@
 import AsyncDisplayKit
 import NuUI
 
-
 public struct ArticleTitleViewModel: BFFViewModel {
     public var onTap: BFFElementTapAction?
 
@@ -51,3 +50,4 @@ private extension ArticleHeaderNode.Input {
         )
     }
 }
+

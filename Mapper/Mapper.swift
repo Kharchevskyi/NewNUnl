@@ -38,6 +38,8 @@ public struct Mapper {
             return ArticleTitleViewModel(articleTitle)
         case .articleBody(let articleBody):
             return ArticleBodyMapper().map(articleBody)
+        case .slideshow(let urls):
+            return SlideShowViewModel(urls: urls.compactMap(URL.init))
         default:
             // Patrick: 5) assertion here because we didn't know about new element. (nil in production code)
             assertionFailure("This bffElement element \(bffElement) is not supported")
@@ -64,7 +66,7 @@ extension ArticleTitleViewModel {
             imageUrl: URL(string: model.imageURLstring),
             title: model.title.attributed(with: 20, color: .black),
             subTitle: model.subtitle.attributed(with: 14, color: .black),
-            dateString: DateFormatter().string(from: model.date).attributed(with: 10, color: .darkGray)
+            dateString: "05.09.2019".attributed(with: 10, color: .darkGray)
         )
     }
 }

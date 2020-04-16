@@ -14,13 +14,16 @@ public final class WeatherImageCellNode: CellNode {
     public struct Input {
         let imageUrl: URL?
         let buttonText: NSAttributedString?
+        let height: CGFloat
 
         public init(
             imageUrl: URL?,
-            buttonText: NSAttributedString?
+            buttonText: NSAttributedString?,
+            height: CGFloat = 200
         ) {
             self.imageUrl = imageUrl
             self.buttonText = buttonText
+            self.height = height
         }
     }
 
@@ -36,7 +39,7 @@ public final class WeatherImageCellNode: CellNode {
     }
 
     public override func layoutSpecThatFits(_: ASSizeRange) -> ASLayoutSpec {
-        imageNode.style.preferredSize = CGSize(width: 200, height: 200)
+        imageNode.style.preferredSize = CGSize(width: 200, height: input.height)
         let stack = ASStackLayoutSpec(
             direction: .vertical,
             spacing: 20,

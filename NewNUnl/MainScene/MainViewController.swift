@@ -44,11 +44,11 @@ final class MainViewController: ASViewController<ASTableNode> {
     override func viewDidLoad() {
         super.viewDidLoad()
         node.view.separatorStyle = .none
-        output?.handle(action: .setup(sceneType ?? .all))
+        output?.handle(action: .viewController(.setup(sceneType ?? .all)))
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        output?.handle(action: .appeared)
+        output?.handle(action: .viewController(.appeared))
     }
 }
 
@@ -92,11 +92,12 @@ extension MainViewController {
     private func handleElementAction(with elementType: BFFAppElement) {
         switch elementType {
         case let .articleLink(url):
-            output?.handle(action: .tapOnLink(url))
+            output?.handle(action: .element(.tapOnLink(url)))
         case .settingsTap: break
         case .weather: break
         case .articleHeader: break
         case .articleBody: break
+        case .slideshow: break
         }
     }
 }
@@ -115,15 +116,26 @@ extension MainViewController: MainViewControllerInput {
     }
 }
 
-
-
 extension MainViewController {
     /// all actions that view controller can perform
     enum Action {
+        case viewController(ViewControllerAction)
+        case userBehaviour(UserAction)
+        case element(ElementAction)
+    }
+
+    enum ViewControllerAction {
         case setup(SceneType)
-        case tapOnLink(_ url: URL)
-        case scroll(_ percent: CGFloat)
-        case tapOnLogin
         case appeared
     }
+
+    enum UserAction {
+        case scroll(_ percent: CGFloat)
+    }
+
+    enum ElementAction {
+        case tapOnLink(_ url: URL)
+        case tapOnLogin
+    }
+    
 }

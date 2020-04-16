@@ -40,18 +40,32 @@ struct MainInteractor: MainInteractorInput {
 
 
     func handle(action: MainViewController.Action) {
+        // actions handling can be separated to some small interactors.
+        // small interactor will receive action event
+        // and if it can handle this action will do it
+        // let outputsToPresenter = [smallInteractForLinkElement, smallInteractorForImageElement ....].compactMap { $0.handle(action) }
+        // this will return array of output events to Presenter [MainPresenter.UpdateEvent]
         switch action {
-        case .setup(let scene):
-            getElements(for: scene)
-        case .scroll(let percent):
-            tracker.trackScroll(with: percent)
-        case .tapOnLink(let url):
-            output.proceedTo(scene: .webView(url))
-        case .tapOnLogin:
-            output.proceedTo(scene: .loginScene)
-        case .appeared:
-            // track smth (business logic is in interactor)
-            tracker.track()
+        case .viewController(let controllerAction):
+            switch controllerAction {
+            case .setup(let scene):
+                getElements(for: scene)
+            case .appeared:
+                // track smth (business logic is in interactor)
+                tracker.track()
+            }
+        case .element(let elementAction):
+            switch elementAction {
+            case .tapOnLink(let url):
+                output.proceedTo(scene: .webView(url))
+            case .tapOnLogin:
+                output.proceedTo(scene: .loginScene)
+            }
+        case .userBehaviour(let event):
+            switch event {
+            case .scroll(let percent):
+                tracker.trackScroll(with: percent)
+            }
         }
     }
 }
@@ -70,7 +84,7 @@ extension MainInteractor {
 
 extension MainInteractor {
     private func fetchAllBlocks() {
-        DispatchQueue.global().asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.global().asyncAfter(deadline: .now() + 1) {
             let allBlocks = self.bffElementFetcher.fetchAll()
                 .transform(with: Constants.weatherButtonTitle) // Patrick: Transform with some title that you want).
             self.output.update(with: .loadedElements(allBlocks))
@@ -78,14 +92,14 @@ extension MainInteractor {
     }
 
     private func fetchSettings() {
-        DispatchQueue.global().asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.global().asyncAfter(deadline: .now() + 1) {
             let allBlocks = self.bffElementFetcher.fetchAll().filter { $0.isSettings }
             self.output.update(with: .loadedElements(allBlocks))
         }
     }
 
     private func fetchArticle() {
-        DispatchQueue.global().asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.global().asyncAfter(deadline: .now() + 1) {
             let allBlocks = self.bffElementFetcher.fetchArticle()
             self.output.update(with: .loadedElements(allBlocks))
         }
