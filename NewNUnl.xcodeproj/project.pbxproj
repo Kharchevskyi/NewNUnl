@@ -65,6 +65,7 @@
 		D2E0B24A242BC1FA00E8F280 /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B249242BC1FA00E8F280 /* MainConfigurator.swift */; };
 		D2F50A8F2448A61E00035757 /* SlideShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F50A8E2448A61E00035757 /* SlideShowViewModel.swift */; };
 		D2F50A912448A65100035757 /* SlideShowCollectionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F50A902448A65100035757 /* SlideShowCollectionNode.swift */; };
+		D2F50A932449AC4600035757 /* Texture.md in Resources */ = {isa = PBXBuildFile; fileRef = D2F50A922449AC4600035757 /* Texture.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,6 +178,7 @@
 		D2E0B249242BC1FA00E8F280 /* MainConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
 		D2F50A8E2448A61E00035757 /* SlideShowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideShowViewModel.swift; sourceTree = "<group>"; };
 		D2F50A902448A65100035757 /* SlideShowCollectionNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideShowCollectionNode.swift; sourceTree = "<group>"; };
+		D2F50A922449AC4600035757 /* Texture.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Texture.md; sourceTree = "<group>"; };
 		D9785B8CF4858DCD6A433951 /* Pods-NewNUnl-NewUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNUnl-NewUI.release.xcconfig"; path = "Target Support Files/Pods-NewNUnl-NewUI/Pods-NewNUnl-NewUI.release.xcconfig"; sourceTree = "<group>"; };
 		E84D791A42E0E3D09BFC2C42 /* Pods-NewNUnlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNUnlTests.debug.xcconfig"; path = "Target Support Files/Pods-NewNUnlTests/Pods-NewNUnlTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F464DBD5159C16150E4A713F /* Pods_NewNUnl_Mapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewNUnl_Mapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -325,6 +327,7 @@
 			isa = PBXGroup;
 			children = (
 				D253142F243E68AE005760B4 /* README.md */,
+				D2F50A922449AC4600035757 /* Texture.md */,
 				D278EA1E242BB5AF00C3978D /* NewNUnl */,
 				D2E0B222242BBED400E8F280 /* NuUI */,
 				D2531417243E616B005760B4 /* Mapper */,
@@ -620,6 +623,7 @@
 			files = (
 				D2531430243E68AE005760B4 /* README.md in Resources */,
 				D278EA2C242BB5AF00C3978D /* LaunchScreen.storyboard in Resources */,
+				D2F50A932449AC4600035757 /* Texture.md in Resources */,
 				D278EA29242BB5AF00C3978D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
